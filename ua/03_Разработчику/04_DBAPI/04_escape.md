@@ -2,7 +2,7 @@
 
 string escape(string $s)
 
-**$s** - строка для обработки
+**$s** - рядок для обработки
 
 При работе этой используется стандартная функция **mysql_real_escape_string**, а при ее отсутствии **mysql_escape_string**.
 
@@ -10,7 +10,7 @@ string escape(string $s)
 
 ***
 
-####Пример
+####Приклад
 
 	function login($username, $password) {  
 		global $modx, $table_prefix;  

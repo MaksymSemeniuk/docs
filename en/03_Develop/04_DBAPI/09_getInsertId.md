@@ -8,7 +8,7 @@ integer getInsertId([$conn])
 
 ***
 
-####Пример
+####Приклад
 
 	function insert_user( $fields, $table ) {  
 		if( is_array( $fields ) {  

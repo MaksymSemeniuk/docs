@@ -15,7 +15,7 @@ string userLoggedIn();
 
 ***
 
-#### Пример:
+#### Приклад:
 
 	$info = $modx->userLoggedIn();
 	//вернет информацию о пользователе

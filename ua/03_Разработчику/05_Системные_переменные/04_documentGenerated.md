@@ -10,6 +10,6 @@ bool documentGenerated
 
 Содержит информацию о том, был ли документ сгенерирован, или взят из cache.
 
-####Пример
+####Приклад
 
     <?php  echo $modx->documentGenerated;  ?>

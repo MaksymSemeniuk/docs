@@ -1,7 +1,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>Ditto: Параметры tagging </h3> 
-Параметры tagging сниппета Ditto.	
+Параметры tagging сніпета Ditto.	
 <br>
 <div class="panel-group accordion">
 <div class="panel panel-default">
@@ -11,9 +11,9 @@
 <div id="collapse527" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> <br>
-<span class="text-bold">Значение по умолчанию:</span> <br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> <br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&tagDocumentID=``</pre>
 </div>
 </div>
@@ -26,9 +26,9 @@
 <div id="collapse528" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> Любые допустимые теги, разделенные с помощью tagDelimiter<br>
-<span class="text-bold">Значение по умолчанию:</span> нет<br>
-<span class="text-bold">Примечание:</span> Любые допустимые теги, разделенные с помощью tagDelimiter<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> нет<br>
+<span class="text-bold">Примітка:</span> Любые допустимые теги, разделенные с помощью tagDelimiter<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&tags=``</pre>
 </div>
 </div>
@@ -41,12 +41,12 @@
 <div id="collapse529" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> onlyAllTags | onlyTags | removeAllTags | removeTags<br>
-<span class="text-bold">Значение по умолчанию:</span> onlyTags<br>
-<span class="text-bold">Примечание:</span> <br>onlyAllTags показать документа, содержащие все теги из параметра tags
+<span class="text-bold">Значення за замовчуванням:</span> onlyTags<br>
+<span class="text-bold">Примітка:</span> <br>onlyAllTags показать документа, содержащие все теги из параметра tags
 <br>onlyTags показать документы, которые имеют любой из тегов tags
 <br>removeAllTags удалить документы, которые содержат все теги tags
 <br>removeTags удалить документы, которые имеют любой из тегов tags <br>
-<p><span class="text-bold">Пример:</span></p>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&tagMode=`onlyAllTags`</pre>
 </div>
 </div>
@@ -58,10 +58,10 @@
 </div>
 <div id="collapse530" class="panel-collapse collapse">
 <div class="panel-body">
-<span class="text-bold">Формат:</span> строка<br>
-<span class="text-bold">Значение по умолчанию:</span> пробел<br>
-<span class="text-bold">Примечание:</span> Любой символ, не содержащийся в тегах<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Формат:</span> рядок<br>
+<span class="text-bold">Значення за замовчуванням:</span> пробел<br>
+<span class="text-bold">Примітка:</span> Любой символ, не содержащийся в тегах<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&tagDelimiter=`, `</pre>
 </div>
 </div>
@@ -74,9 +74,9 @@
 <div id="collapse531" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> 0 | 1<br>
-<span class="text-bold">Значение по умолчанию:</span> 0<br>
-<span class="text-bold">Примечание:</span> 1 - вкл., 0 - выкл.<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 0<br>
+<span class="text-bold">Примітка:</span> 1 - вкл., 0 - выкл.<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&caseSensitive=`1`</pre>
 </div>
 </div>
@@ -88,10 +88,10 @@
 </div>
 <div id="collapse532" class="panel-collapse collapse">
 <div class="panel-body">
-<span class="text-bold">Формат:</span> строка<br>
-<span class="text-bold">Значение по умолчанию:</span> значение параметра tagDelimiter<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Формат:</span> рядок<br>
+<span class="text-bold">Значення за замовчуванням:</span> значение параметра tagDelimiter<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&tagDisplayDelimiter=`, `</pre>
 </div>
 </div>
@@ -104,9 +104,9 @@
 <div id="collapse533" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> 0 | 1<br>
-<span class="text-bold">Значение по умолчанию:</span> 1<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 1<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&tagSort=`0`</pre>
 </div>
 </div>
@@ -119,9 +119,9 @@
 <div id="collapse582" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> Поле документа или переменная шаблона<br>
-<span class="text-bold">Значение по умолчанию:</span> нет<br>
-<span class="text-bold">Примечание:</span> автоматически добавляет в пометки Extender<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> нет<br>
+<span class="text-bold">Примітка:</span> автоматически добавляет в пометки Extender<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&tagData=`tags`</pre>
 </div>
 </div>
@@ -134,10 +134,10 @@
 <div id="collapse534" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> 1 | 2<br>
-<span class="text-bold">Значение по умолчанию:</span> 1<br>
-<span class="text-bold">Примечание:</span> <br>1 - строка с ссылками и разделителем tagDisplayDelimiter)
+<span class="text-bold">Значення за замовчуванням:</span> 1<br>
+<span class="text-bold">Примітка:</span> <br>1 - рядок с ссылками и разделителем tagDisplayDelimiter)
 <br>2 - UL/LI список<br>
-<p><span class="text-bold">Пример:</span></p>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&tagDisplayMode=`2`</pre>
 </div>
 </div>
@@ -150,9 +150,9 @@
 <div id="collapse535" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> имя чанка | @FILE | @CODE<br>
-<span class="text-bold">Значение по умолчанию:</span> нет<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> нет<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&tplTagLinks=``</pre>
 </div>
 </div>
@@ -165,9 +165,9 @@
 <div id="collapse536" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> любое допустимое имя функции<br>
-<span class="text-bold">Значение по умолчанию:</span> нет<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> нет<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&tagCallback=``</pre>
 </div>
 </div>

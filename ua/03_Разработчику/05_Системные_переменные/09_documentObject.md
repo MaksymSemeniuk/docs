@@ -6,7 +6,7 @@ array documentObject
 
 Подходящего метода API для получения данных из documentObject нет.
 
-####Пример
+####Приклад
 
     <?php  
         echo $modx->documentObject['pagetitle'];  

@@ -10,6 +10,6 @@ bool isMemberOfWebGroup(array $groupNames);
 
 ***
 
-####Пример
+####Приклад
 
 	$test = $modx->isMemberOfWebGroup( array('Editors')); // true

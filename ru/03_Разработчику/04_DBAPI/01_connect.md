@@ -1,4 +1,4 @@
-###Установка связи с базой
+###Встановлення связи с базой
 
 void connect(string $host, string $dbase, string $uid, string $pwd, boolean $persist)
 
@@ -13,7 +13,7 @@ void connect(string $host, string $dbase, string $uid, string $pwd, boolean $per
 
 ***
 
-####Пример
+####Приклад
 
 	//Соединение со сторонней базой
 	$modx->db->connect('123.45.6.7', 'mydb', 'user', 'password', true);  

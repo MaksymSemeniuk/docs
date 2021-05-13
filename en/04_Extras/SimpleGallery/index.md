@@ -5,14 +5,14 @@ SimpleGallery - Вывод галереи на странице Evolution CMS.
 <p>Раз такой вопрос все же возник, то покажу, как делать вывод. Ввод, я надеюсь, понятен интуитивно (:</p>
 <h3 class="sub-header">Вывод галереи на странице</h3>
 <p>Важное достоинство DocLister заключается в том, что теперь не нужно городить свои велосипеды для вывода данных из любых таблиц: не нужно придумывать названия параметров (чтобы потом в них путаться), пагинации, сортировки и т.п. Всю нудную работу сделал <a href="http://modx.im/profile/Agel_Nash/" rel="nofollow" target="_blank">Agel_Nash</a> , за что ему в очередной раз спасибо.</p>
-<p>Для работы с произвольными таблицами в DocLister есть контроллер onetable. Все что нужно знать – это название таблицы, названия ее полей, название ключевого поля. Все остальное есть <a href="doclister/index.html" target="_blank">в документации</a>.</p>
+<p>Для работы с произвольными таблицами в DocLister есть контроллер onetable. Все что нужно знать – это Назва таблицы, названия ее полей, Назва ключевого поля. Все остальное есть <a href="doclister/index.html" target="_blank">в документации</a>.</p>
 <p>Еще раз приведу названия полей в таблице <span class="text-bold">sg_images</span>:</p>
 <ul>
 	<li><span class="text-bold">sg_id</span> – id картинки, <span class="text-bold">ключевое поле (idField)</span>;</li>
 	<li><span class="text-bold">sg_index</span> – позиция в списке;</li>
 	<li><span class="text-bold">sg_image</span> – ссылка на картинку;</li>
-	<li><span class="text-bold">sg_title</span> – название картинки;</li>
-	<li><span class="text-bold">sg_description</span> – описание картинки;</li>
+	<li><span class="text-bold">sg_title</span> – Назва картинки;</li>
+	<li><span class="text-bold">sg_description</span> – Опис картинки;</li>
 	<li><span class="text-bold">sg_properties</span> – здесь в формате json хранится информация о ширине и высоте картинки, а также размере файла, можно еще что-нибудь хранить в этом поле;</li>
 	<li><span class="text-bold">sg_add</span> – дополнительное поле, сейчас уже не помню, зачем оно мне было нужно;</li>
 	<li><span class="text-bold">sg_isactive</span> – флажок, чтобы скрыть какие-то картинки из вывода;</li>
@@ -45,7 +45,7 @@ assets/galleries/2/kitty093p.jpg kitty093p
 </pre>
 <p>Если на страницу добавить [+pages+], а к вызову добавить &paginate=`pages` &display=`10` – получим пагинацию. </p>
 <p>То есть вывод из своей таблицы не сильно отличается от обычного вывода документов.</p>
-<p>Чтобы не писать каждый раз &controller=`onetable` &table=`sg_images` &idField=`sg_id`, я сделал сниппет-обертку sgLister. <a href="http://modx.im/profile/Agel_Nash/" rel="nofollow" target="_blank">Agel_Nash</a> этот сниппет доработал и теперь при его вызове происходит дополнительная обработка полей, в чанке можно использовать такие плейсхолдеры:</p>
+<p>Чтобы не писать каждый раз &controller=`onetable` &table=`sg_images` &idField=`sg_id`, я сделал сніпет-обертку sgLister. <a href="http://modx.im/profile/Agel_Nash/" rel="nofollow" target="_blank">Agel_Nash</a> этот сніпет доработал и теперь при его вызове происходит дополнительная обработка полей, в чанке можно использовать такие плейсхолдеры:</p>
 <ul>
 	<li>[+thumb.sg_image+], [+thumb.width.sg_image+], [+thumb.height.sg_image+] – превьюшка и ее размеры;</li>
 	<li>[+e.sg_title+] и [+e.sg_description+]- значения полей sg_title и sg_description, которые преобразованы в html-сущности (чтобы не поломать случайно верстку кавычками или скобками);</li>
@@ -53,8 +53,8 @@ assets/galleries/2/kitty093p.jpg kitty093p
 </ul>
 <p>Использовать поле [+thumb.sg_image+] можно, если при вызове добавить параметры:</p>
 <ul>
-	<li><span class="text-bold">&thumbSnippet</span> – имя сниппета, который вернет ссылку на превью, например, phpthumb;</li>
-	<li><span class="text-bold">&thumbOptions</span> – параметры для создания превью, в том виде, в каком их примет указанный сниппет.</li>
+	<li><span class="text-bold">&thumbSnippet</span> – имя сніпета, который вернет ссылку на превью, наПриклад, phpthumb;</li>
+	<li><span class="text-bold">&thumbOptions</span> – параметры для создания превью, в том виде, в каком их примет указанный сніпет.</li>
 </ul>
 <p>На практике это выглядит так:</p>
 <pre class="brush: html;">
@@ -100,7 +100,7 @@ assets/galleries/2/kitty093p.jpg kitty093p
 	<li><span class="text-bold">&sgAddWhereList</span> – здесь можно указать условия для выборки картинок.</li>
 </ul>
 
-<p>Для того, чтобы вывести в чанке документа (&tpl) эти картинки, следует использовать плейсхолдер [+images+]. Однако если просто вписать [+images+], то картинки не выведутся (потому что images – это массив). Нужен prepare-сниппет для дополнительной обработки (назовем его prepareImages):</p>
+<p>Для того, чтобы вывести в чанке документа (&tpl) эти картинки, следует использовать плейсхолдер [+images+]. Однако если просто вписать [+images+], то картинки не выведутся (потому что images – это массив). Нужен prepare-сніпет для дополнительной обработки (назовем его prepareImages):</p>
 <pre class="brush: php;">
 &lt;?php
 if (isset($data['images'])) {
@@ -130,7 +130,7 @@ return $data;
 ?&gt;
 </pre>
 
-<p>Prepare-сниппет может пригодиться также для вывода свойств картинки. Это ширина, высота и размер файла – они хранятся в поле sg_properties в виде json. Тут все просто:</p>
+<p>Prepare-сніпет может пригодиться также для вывода свойств картинки. Это ширина, высота и размер файла – они хранятся в поле sg_properties в виде json. Тут все просто:</p>
 <pre class="brush: php;">
 &lt;?php
 if (isset($data['sg_properties'])) {
@@ -143,7 +143,7 @@ return $data;
 ?&gt;
 </pre>
 
-<p>С некоторых пор в комплекте имеется сниппет-обертка sgController, который вызывает DocLister с нужными параметрами и не требует отдельного prepare-сниппета:</p>
+<p>С некоторых пор в комплекте имеется сніпет-обертка sgController, который вызывает DocLister с нужными параметрами и не требует отдельного prepare-сніпета:</p>
 <pre class="brush: html;">
 [[sgController? 
 &sgOrderBy=`sg_id DESC`
@@ -163,5 +163,5 @@ return $data;
 &sgDisplay=`5`
 ]]
 </pre>
-<p>В sgRowTpl можно использовать все плейсхолдеры, предусмотренные сниппетом sgLister.</p>
+<p>В sgRowTpl можно использовать все плейсхолдеры, предусмотренные сніпетом sgLister.</p>
 <p class="text-bold">Если возникают проблемы, то советую первым делом обновить DocLister <a href="https://github.com/AgexNash" rel="nofollow" target="_blank">с гитхаба</a>.</p>

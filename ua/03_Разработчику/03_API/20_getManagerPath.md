@@ -4,7 +4,7 @@ string getManagerPath();
 
 ***
 
-####Пример
+####Приклад
 
 	echo $modx->getManagerPath(); 
 	// полученный результат: /manager/

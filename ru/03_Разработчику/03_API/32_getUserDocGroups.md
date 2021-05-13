@@ -8,7 +8,7 @@ mixed getUserDocGroups([bool $resolveIds]);
 
 ***
 
-####Пример
+####Приклад
 
 	$txt = $modx->getUserDocGroups(true); 
 	print_r($txt); 

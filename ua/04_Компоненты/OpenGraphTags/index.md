@@ -1,7 +1,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>OpenGraphTags: Вывод OG-тегов для статьи </h3>
-Сниппет вывода OG-тегов для статьи в Evolution CMS.
+сніпет вывода OG-тегов для статьи в Evolution CMS.
 <p>Автор: <i class="fa fa-github fa-lg text-primary"></i> <a href="https://github.com/Aharito/OpenGraphTags/blob/master/snippet.OpenGraphTags.php" rel="nofollow" target="_blank">Aharito</a></p>
 <h3 class="sub-header">Параметры:</h3>
 <h3 class="sub-header text-bold">tplList</h3>
@@ -13,23 +13,23 @@
 <h3 class="sub-header text-bold">flag</h3>
 <p>string, имя ТВ-параметра-флага (чекбокс, им можно включить/отключить вывод OG-тегов для статьи, даже если её шаблон в списке $tplList). По умолчанию 1 (вкл).</p>
 <h3 class="sub-header text-bold">thumbSnippet</h3>
-<p>string - сниппет для превьюшек как в SG и FastImage. Например, "sgThumb" или "phpthumb". По умолчанию пусто.</p>
+<p>string - сніпет для превьюшек как в SG и FastImage. НаПриклад, "sgThumb" или "phpthumb". По умолчанию пусто.</p>
 <h3 class="sub-header text-bold">thumbOptions</h3>
 <p>string - опции превьюшки, заданные как в SG или FastImageTV или phpthumb. По умолчанию пусто.</p>
-<p><span class="text-primary">NOTE:</span> Для работы сниппета должны быть созданы следующие ТВ-параметры:</p>
+<p><span class="text-primary">NOTE:</span> Для работы сніпета должны быть созданы следующие ТВ-параметры:</p>
 <ul>
 	<li><span class="text-danger">og_on_off</span> - ТВ-параметр-флаг (чекбокс, им можно включить/отключить вывод OG-тегов для статьи, даже если её шаблон есть в списке $tplList)</li>
 	<li><span class="text-danger">og_title</span> - заголовок для соцсетей, если не задан, соцсети чаще всего берут Title.</li>
-	<li><span class="text-danger">og_description</span> - описание для соцсетей, не более 137 символов по моим экспериментам</li>
+	<li><span class="text-danger">og_description</span> - Опис для соцсетей, не более 137 символов по моим экспериментам</li>
 	<li><span class="text-danger">og_image</span> - картинка для соцсетей, если не задана, соцсети ищут картинки в контенте</li>
 </ul>
 
-<h3 class="sub-header">Пример вызова сниппета:</h2>
+<h3 class="sub-header">Приклад вызова сніпета:</h2>
 <pre class="brush: html;">
 [[OpenGraphTags? &tplList=`31,32` &site_name=`[(cfg_company_brand_name)]` &thumbSnippet=`sgThumb` &thumbOptions=`840x420`]]
 </pre>
 
-<h3 class="sub-header">Код сниппета:</h2>
+<h3 class="sub-header">Код сніпета:</h2>
 <pre class="brush: php;">
 &lt;?php
 /**
@@ -45,13 +45,13 @@
  * @param $site_name, string, по умолчанию [(site_name)]
  * @param $flag, string, имя ТВ-параметра-флага (чекбокс, им можно включить/отключить вывод OG-тегов для статьи, даже если её шаблон в списке $tplList). По умолчанию 1 (вкл).
  *
- * @param &thumbSnippet, string - сниппет для превьюшек как в SG и FastImage. Например, "sgThumb" или "phpthumb". По умолчанию пусто.
+ * @param &thumbSnippet, string - сніпет для превьюшек как в SG и FastImage. НаПриклад, "sgThumb" или "phpthumb". По умолчанию пусто.
  * @param &thumbOptions, string - опции превьюшки, заданные как в SG или FastImageTV или phpthumb. По умолчанию пусто.
  *
- * @NOTE: Для работы сниппета должны быть созданы следующие ТВ-параметры:
+ * @NOTE: Для работы сніпета должны быть созданы следующие ТВ-параметры:
  * og_on_off - ТВ-параметр-флаг (чекбокс, им можно включить/отключить вывод OG-тегов для статьи, даже если её шаблон есть в списке $tplList)
  * og_title - заголовок для соцсетей, если не задан, соцсети чаще всего берут Title.
- * og_description - описание для соцсетей, не более 137 символов по моим экспериментам
+ * og_description - Опис для соцсетей, не более 137 символов по моим экспериментам
  * og_image - картинка для соцсетей, если не задана, соцсети ищут картинки в контенте
  * 
  *
@@ -73,7 +73,7 @@ $docObject = $modx->documentObject;
 
 if ( in_array($docObject['template'], $_tplList) && $docObject['og_on_off'][1] ) { // Если шаблон в списке $tplList, и если флаг "включен"
 
-	// Эти параметры заданы единожды при вызове сниппета OpenGraphTags
+	// Эти параметры заданы единожды при вызове сніпета OpenGraphTags
 	$site_name = isset($site_name) ? $site_name : $modx->getConfig('site_name');
 	$locale = isset($locale) ? $locale : "ru_RU";
 	

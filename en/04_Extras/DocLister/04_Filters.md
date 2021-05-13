@@ -8,7 +8,7 @@
 * private - для фильтрации документов с учетом прав доступа.
 
 ##Построение фильтра
-####Пример
+####Приклад
 ```
 OR(AND(filter:field:operator:value;filter2:field:operator:value);(...))
 ```
@@ -51,15 +51,15 @@ OR(AND(filter:field:operator:value;filter2:field:operator:value);(...))
 
 ###against
 Полнотекстовый поиск.
-####Пример
+####Приклад
 ```
-[[DocLister? &filters=`AND(content:pagetitle,description,content,introtext:against:искомая строка)`]]
+[[DocLister? &filters=`AND(content:pagetitle,description,content,introtext:against:искомая рядок)`]]
 ```
-Из данного примера предполагается, что в базе данных имеется FULLTEXT индекс по полям pagetitle,description,content,introtext
+Из данного Приклада предполагается, что в базе данных имеется FULLTEXT индекс по полям pagetitle,description,content,introtext
 
 ###containsOne
 Поиск любого слова или его части в тексте при помощи LIKE.
-####Примера:
+####Приклада:
 ```
 [[DocLister? &filters=`AND(content:content:containsOne:когда,наступит,мир)`]]
 ```
@@ -68,7 +68,7 @@ OR(AND(filter:field:operator:value;filter2:field:operator:value);(...))
 (content LIKE '%когда%' OR content LIKE '%наступит%' OR content LIKE '%мир%')
 ```
 Т.е. в конечном счете из базы будут выбраны документы в тексте которых используется слова "когда" или "наступит" или "мир".
-Из примера вызова видно, что слова разделены запятой. Это поведение можно переопределить параметром ___filter_delimiter___.
+Из Приклада вызова видно, что слова разделены запятой. Это поведение можно переопределить параметром ___filter_delimiter___.
 
 ###in
 Входит в множество.
@@ -76,7 +76,7 @@ OR(AND(filter:field:operator:value;filter2:field:operator:value);(...))
 ###notin
 Не входит в множество.
 
-####Пример вызова с фильтрацией по цене от 0 до 300:
+####Приклад вызова с фильтрацией по цене от 0 до 300:
 
 ```
 [[DocLister? &filters=`AND(tv:price:gt:0;tv:price:lt:300)`]]

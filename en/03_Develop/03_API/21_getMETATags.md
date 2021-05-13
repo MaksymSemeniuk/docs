@@ -18,7 +18,7 @@ array getMETATags(int $id);
 	
 ***
 	
-####Пример
+####Приклад
 
 	$txt = $modx->getMETATags(10);
 	

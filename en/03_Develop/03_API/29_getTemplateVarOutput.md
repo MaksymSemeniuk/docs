@@ -25,7 +25,7 @@ array getTemplateVarOutput(array $idnames[, int $docid[, int $published]]);
 
 ***
 
-####Пример
+####Приклад
 
 	$txt = $modx->getTemplateVarOutput(array('МойПараметр','ЕщеПараметр'));
 	//вернет информацию по дополнительным параметрам МойПараметр и ЕщеПараметр для текущего документа.

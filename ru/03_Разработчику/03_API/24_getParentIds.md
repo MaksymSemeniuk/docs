@@ -18,7 +18,7 @@ Array getParentIds(mixed $id[, int $height= 10[, array $parents= array ()]]);
 
 ***
 
-####Пример:
+####Приклад:
 	/**Структура документов:
 	-Статьи (1)
 	--Недвижимость (11)

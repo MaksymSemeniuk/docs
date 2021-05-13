@@ -2,8 +2,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>Звездный рейтинг для MODX Evolution </h3>
 Отличается от основной сборки очень гибкими настройками (изображения звезд, оформление и т.д.).
-<h3 class="sub-header">Установка<a class="pull-right" data-toggle="tooltip" data-placement="left" title="СКАЧАТЬ" href="assets/files/MODX-Evolution-Star-Rating-jquery.raty.zip.html"><i class="fa fa-lg fa-download"></i></a></h3>
-<p>Создать новый сниппет с именем <code>star_rating</code> и следующим содержимым:</p>
+<h3 class="sub-header">Встановлення<a class="pull-right" data-toggle="tooltip" data-placement="left" title="СКАЧАТЬ" href="assets/files/MODX-Evolution-Star-Rating-jquery.raty.zip.html"><i class="fa fa-lg fa-download"></i></a></h3>
+<p>Создать новый сніпет с именем <code>star_rating</code> и следующим содержимым:</p>
 <pre class="brush: php;">
 &lt;?php
 return require MODX_BASE_PATH . 'assets/snippets/star_rating/snippet.php';
@@ -15,17 +15,17 @@ include MODX_BASE_PATH . 'assets/snippets/star_rating/starrating.module.php';
 </pre>
 <p>После создания модуля необходимо обновить страницу чтобы ссылка на модуль появилась на вкладке <code>"Модули"</code>. Далее если вы ранее не устанавливали этот компонент необходимо нажать кнопку <code>"Установить"</code>.</p>
 <h3 class="sub-header">Использование</h3>
-<p>Пример вызова сниппета:</p>
+<p>Приклад вызова сніпета:</p>
 <pre class="brush: html;">
 [!star_rating? &amp;id=`418` &amp;tpl=`@CHUNK:star_rating`!]
 </pre>
-<h3 class="sub-header">Параметры сниппета</h3>
+<h3 class="sub-header">Параметры сніпета</h3>
 <table class="table table-striped table-vcenter table-bordered table-condensed">
 	<thead>
 		<tr>
 			<th>Параметр</th>
 			<th class="text-center">По умолчанию</th>
-			<th>Описание</th>
+			<th>Опис</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -37,7 +37,7 @@ include MODX_BASE_PATH . 'assets/snippets/star_rating/starrating.module.php';
 		<tr>
 			<td><span class="text-bold">tpl</span></td>
 			<td class="text-center"><code>template</code></td>
-			<td>Шаблон для вывода рейтинга. Для использования чанков MODX следует у имени чанка добавить приставку <code>@CHUNK:</code> как на примере</td>
+			<td>Шаблон для вывода рейтинга. Для использования чанков MODX следует у имени чанка добавить приставку <code>@CHUNK:</code> как на Прикладе</td>
 		</tr>
 		<tr>
 			<td><span class="text-bold">lang</span></td>

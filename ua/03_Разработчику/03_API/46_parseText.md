@@ -2,7 +2,7 @@
 
 string parseText(string $chunkName, array $chunkArr[, string $prefix[, string $suffix]]);
 
-**$chunkName** - строка содержащая текст с плейсхолдерами
+**$chunkName** - рядок содержащая текст с плейсхолдерами
 
 **$chunkArr** - массив со значениями плейсхолдеров
 
@@ -23,11 +23,11 @@ string parseText(string $chunkName, array $chunkArr[, string $prefix[, string $s
 
 ***
 
-####Пример:
-	$text = 'Пример текста с тегами, [+name+] , [+type+], [+url+]';
+####Приклад:
+	$text = 'Приклад текста с тегами, [+name+] , [+type+], [+url+]';
 	$txt = $modx->parseText($text, array( 'name' => 'modx.im', 'type' => 'site', 'url' => 'http://modx.im' ), '[+', '+]' );
 	//вернет: 
-	Пример текста с тегами, modx.im , site, http://modx.im
+	Приклад текста с тегами, modx.im , site, http://modx.im
 	
 	
 ####Исходный код функции

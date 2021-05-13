@@ -1,7 +1,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>AjaxSearch: Ajax параметры </h3> 
-Ajax параметры сниппета AjaxSearch.	
+Ajax параметры сніпета AjaxSearch.	
 <br>
 <div class="panel-group accordion">
 <div class="panel panel-default">
@@ -11,11 +11,11 @@ Ajax параметры сниппета AjaxSearch.
 <div id="collapse105" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> 0 | 1<br>
-<span class="text-bold">Значение по умолчанию:</span> 0<br>
-<span class="text-bold">Примечание:</span> <br>Есть два режима работы формы ajaxSearch:<br>
+<span class="text-bold">Значення за замовчуванням:</span> 0<br>
+<span class="text-bold">Примітка:</span> <br>Есть два режима работы формы ajaxSearch:<br>
 0 - форма и кнопка отображаются и поиск не начинается до нажатия кнопки пользователем.<br>
 1 - поиск запускается автоматически, как только пользователь вводит поисковый запрос<br>
-<p><span class="text-bold">Пример:</span></p>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&liveSearch=`1`</pre>
 </div>
 </div>
@@ -27,9 +27,9 @@ Ajax параметры сниппета AjaxSearch.
 <div id="collapse106" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> число<br>
-<span class="text-bold">Значение по умолчанию:</span> 6<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 6<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&ajaxMax=`10`</pre>
 </div>
 </div>
@@ -41,9 +41,9 @@ Ajax параметры сниппета AjaxSearch.
 <div id="collapse107" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> 0 | 1<br>
-<span class="text-bold">Значение по умолчанию:</span> 0<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 0<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&showMoreResults=`1`</pre>
 </div>
 </div>
@@ -55,9 +55,9 @@ Ajax параметры сниппета AjaxSearch.
 <div id="collapse108" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> ID документа<br>
-<span class="text-bold">Значение по умолчанию:</span> 0<br>
-<span class="text-bold">Примечание:</span> эта страница должна содержать другой вызов сниппета для того, чтобы показать результаты<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 0<br>
+<span class="text-bold">Примітка:</span> эта страница должна содержать другой вызов сніпета для того, чтобы показать результаты<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&moreResultsPage=`12`</pre>
 </div>
 </div>
@@ -69,9 +69,9 @@ Ajax параметры сниппета AjaxSearch.
 <div id="collapse109" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> 0 < число < 1<br>
-<span class="text-bold">Значение по умолчанию:</span> 1<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 1<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&opacity=`0.9`</pre>
 </div>
 </div>
@@ -83,9 +83,9 @@ Ajax параметры сниппета AjaxSearch.
 <div id="collapse110" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> jquery | mootools2 | mootools<br>
-<span class="text-bold">Значение по умолчанию:</span> mootools<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> mootools<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&jscript=`mootools2`</pre>
 </div>
 </div>
@@ -97,9 +97,9 @@ Ajax параметры сниппета AjaxSearch.
 <div id="collapse111" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> 0 | 1<br>
-<span class="text-bold">Значение по умолчанию:</span> 1<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 1<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&addJscript=`0`</pre>
 </div>
 </div>
@@ -111,9 +111,9 @@ Ajax параметры сниппета AjaxSearch.
 <div id="collapse112" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> Путь к библиотеке MooTools<br>
-<span class="text-bold">Значение по умолчанию:</span> manager/media/script/mootools/mootools.js<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> manager/media/script/mootools/mootools.js<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&jsMooTools=``</pre>
 </div>
 </div>
@@ -125,10 +125,10 @@ Ajax параметры сниппета AjaxSearch.
 <div id="collapse113" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> Путь к библиотеке MooTools2<br>
-<span class="text-bold">Значение по умолчанию:</span> js/mootools2/mootools1.2.js<br>
-<span class="text-bold">Примечание:</span> mootools2 - альтернатива mootools библиотеке.
+<span class="text-bold">Значення за замовчуванням:</span> js/mootools2/mootools1.2.js<br>
+<span class="text-bold">Примітка:</span> mootools2 - альтернатива mootools библиотеке.
 Mootools1.2.4 уже установлена<br>
-<p><span class="text-bold">Пример:</span></p>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&jsMooTools2=``</pre>
 </div>
 </div>
@@ -140,9 +140,9 @@ Mootools1.2.4 уже установлена<br>
 <div id="collapse114" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> Путь к библиотеке Jquery<br>
-<span class="text-bold">Значение по умолчанию:</span> js/jQuery/jquery.js<br>
-<span class="text-bold">Примечание:</span> совместимость с Jquery 1.4.2 библиотекой<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> js/jQuery/jquery.js<br>
+<span class="text-bold">Примітка:</span> совместимость с Jquery 1.4.2 библиотекой<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&jsJquery=``</pre>
 </div>
 </div>

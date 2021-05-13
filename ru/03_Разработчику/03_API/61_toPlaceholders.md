@@ -10,9 +10,9 @@ void toPlaceholders(mixed $subject[, string $prefix]);
 
 ***
 
-####Пример
+####Приклад
 
-	// Зададим некий массив, который может выдавать наш сниппет 
+	// Зададим некий массив, который может выдавать наш сніпет 
 	
 	$a = array( 'name' => 'Сообщество MODX', 
 				'type' => 'site', 
@@ -22,8 +22,8 @@ void toPlaceholders(mixed $subject[, string $prefix]);
 	$modx->toPlaceholders($a,'test.'); 
 	
 	// Выведем текст для проверки плейсхолдеров 
-	echo ' Название сайта: [+test.name+]<br> Ссылка на сайт: [+test.url+] '; 
+	echo ' Назва сайта: [+test.name+]<br> Ссылка на сайт: [+test.url+] '; 
 	
 	// полученный результат: 
-	// Название сайта: Сообщество MODX 
+	// Назва сайта: Сообщество MODX 
 	// Ссылка на сайт: http://modx.im

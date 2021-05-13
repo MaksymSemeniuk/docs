@@ -25,7 +25,7 @@ string getXML($dsq)
 
 ***
 
-####Пример
+####Приклад
 
 	$result = $modx->db->select( 'id, name, location', 'places', '' );  
 	$xml = $modx->db->getXML( $result );   

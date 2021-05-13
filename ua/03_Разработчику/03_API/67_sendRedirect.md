@@ -8,12 +8,12 @@ bool|null sendRedirect(string $url, int $count_attempts = 0, string $type = '', 
 
 **$count_attempts** - добавить счетчик количества переадресаций в url. Возможные значения - '0', '1'. По умолчанию - '0'
 
-**$type** - Тип редиректа. Возможные значения - 'REDIRECT_REFRESH' (немедленная переадресация), 'REDIRECT_META' (переадресация средствами html), 'REDIRECT_HEADER' (редирект средствами php). По умолчанию - пустая строка, что аналогично значению 'REDIRECT_HEADER'.
+**$type** - Тип редиректа. Возможные значения - 'REDIRECT_REFRESH' (немедленная переадресация), 'REDIRECT_META' (переадресация средствами html), 'REDIRECT_HEADER' (редирект средствами php). По умолчанию - пустая рядок, что аналогично значению 'REDIRECT_HEADER'.
 
 **$responseCode** - код http-ответа. Возможные значения - 'HTTP/1.1 301 Moved Permanently', 'HTTP/1.1 302 Moved Temporarily' (постоянная и временная переадресация соответственно).
 
 
-## Пример:
+## Приклад:
 
 **Вызов:**
 ```

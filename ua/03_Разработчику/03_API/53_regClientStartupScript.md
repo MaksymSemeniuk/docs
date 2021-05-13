@@ -11,14 +11,14 @@ false - размещение в виде внешнего файла или бл
 
 ***
 
-####Пример 1
+####Приклад 1
 
 	$src = "assets/js/prototype.js"; $modx->regClientStartupScript($src);
 	Это добавит в документ запись:
 
 	<script type="text/javascript" url="assets/js/prototype.js"></script>
 
-####Пример 2
+####Приклад 2
 Можно разместить также и блок с готовым скриптом:
 
 	$src2 = "<script type='text/javascript'>

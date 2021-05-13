@@ -12,7 +12,7 @@ resource select($fields , $from [, $where [, $orderby [, $limit]]])
 
 ***
 
-####Пример
+####Приклад
 
 	function login($username, $password) {  
 		global $modx;  

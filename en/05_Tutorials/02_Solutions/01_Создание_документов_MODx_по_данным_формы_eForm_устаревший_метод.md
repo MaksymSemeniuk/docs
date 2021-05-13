@@ -4,9 +4,9 @@ Docmanager
 
 Создаем форму
 
-Форма создается с помощью стандартного сниппета eForm. В него встроены все необходимые проверки полей, а также возможность отправить нам письмо о добавлении нового материала.
+Форма создается с помощью стандартного сніпета eForm. В него встроены все необходимые проверки полей, а также возможность отправить нам письмо о добавлении нового материала.
 
-Для примера сделаем такую форму в чанке Anketa:
+Для Приклада сделаем такую форму в чанке Anketa:
 
 <p class="error">[+validationmessage+]</p>
  <form action="[~[*id*]~]" method="post" enctype="multipart/form-data">
@@ -15,10 +15,10 @@ Docmanager
      <input class="field" type="text" name="avtor" maxlength="60" eform="Имя автора:string:1:Имя автора нужно обязательно!" /></p>      <p><label>Email *</label><br>
      <input class="field" type="text" name="email" size="40" maxlength="40" eform="Адрес почты:email:0" /></p>      <p><label>Адрес сайта</label><br>
      <input class="field" type="text" name="link" size="40" maxlength="40" eform="Адрес сайта:string:0" /><br>
-     <em style="color: #999">Правильно: "http://www.modx-cms.ru". Неправильно: "www.modx-cms.ru"</em></p>      Название *<br>
-     <input name="pagetitle" type="text" eform="Краткое название:string:0:Название обязательно!" /><br>      Аннотация *<br>
-     <textarea name="introtext" cols="40" rows="5" eform="Краткое описание:string:0:Краткое описание обязательно!"></textarea><br><br>      Текст статьи<br>
-     <textarea name="content" cols="40" rows="10" eform="Расширенное описание:string:0"></textarea><br><br>
+     <em style="color: #999">Правильно: "http://www.modx-cms.ru". Неправильно: "www.modx-cms.ru"</em></p>      Назва *<br>
+     <input name="pagetitle" type="text" eform="Краткое Назва:string:0:Назва обязательно!" /><br>      Аннотация *<br>
+     <textarea name="introtext" cols="40" rows="5" eform="Краткое Опис:string:0:Краткое Опис обязательно!"></textarea><br><br>      Текст статьи<br>
+     <textarea name="content" cols="40" rows="10" eform="Расширенное Опис:string:0"></textarea><br><br>
      <p><input type="submit" name="frmGo" value="Послать" /></p>
  </form>
 Вызов формы на сайте
@@ -30,16 +30,16 @@ Docmanager
 
 Обработчик полученных данных
 
-После того как мы получили все необходимые от пользователя данные нам необходимо их поместить в документ. Для это делаем новый сниппет с именем NewArticleEvent и в нем создаем свою функцию CreateNewArticle:
+После того как мы получили все необходимые от пользователя данные нам необходимо их поместить в документ. Для это делаем новый сніпет с именем NewArticleEvent и в нем создаем свою функцию CreateNewArticle:
 
 function CreateNewArticle(&$fields){
      // Массив $fields будет содержать данные всех полей формы
-     // Создания документа с описанием.
+     // Создания документа с Описм.
      require_once('assets/libs/docmanager/document.class.inc.php');
      $doc = new Document(); // создаем документ
      $doc->Set('parent',60); // определяем в какую папку положить
      $doc->Set('template','Статья'); // задаем шаблон
-     $doc->Set('pagetitle',$fields['pagetitle']); // краткое название
+     $doc->Set('pagetitle',$fields['pagetitle']); // краткое Назва
      $doc->Set('introtext',$fields['introtext']); // аннотацию
      $doc->Set('content',$fields['content']); // основное содержимое
      // Далее пойдут TV-параметры
@@ -48,9 +48,9 @@ function CreateNewArticle(&$fields){
      $doc->Set('tvLink',$fields['link']); // ссылка
      $doc->Save(); // сохраняем
      return true; // Говорим eForm, что все в порядке. }
-Вот такой простой код нам позволит полученные данные сохранить в документ. Названия сниппета и функции с обработчиком можно изменить при желании.
+Вот такой простой код нам позволит полученные данные сохранить в документ. Названия сніпета и функции с обработчиком можно изменить при желании.
 
-Важно! Для указания TV-параметров перед названием необходимо добавлять приставку tv, то есть  это не часть названия параметра.
+Важно! Для указания TV-параметров перед Назвам необходимо добавлять приставку tv, то есть  это не часть названия параметра.
 
 Подключаем обработчик к нашей форме
 
@@ -58,7 +58,7 @@ eForm имеет несколько событий, которые мы може
 
 [!NewArticleEvent!]
  [!eForm? &formid=`newArticle` &subject=`Посетители прислали новый файл` &tpl=`Anketa` &eFormOnBeforeMailSent=`CreateNewArticle`!]
-Важно! Чтобы событие eForm имело доступ к нашему обработчику необходимо сделать вызов сниппета с обработчиком сразу перед вызовом eForm. Название вызываемой функции задается в параметре вызова обработчика &eFormOnBeforeMailSent.
+Важно! Чтобы событие eForm имело доступ к нашему обработчику необходимо сделать вызов сніпета с обработчиком сразу перед вызовом eForm. Назва вызываемой функции задается в параметре вызова обработчика &eFormOnBeforeMailSent.
 
 PS: Таким образом можно создавать формы любой сложности и даже организовать закачку файлов.
 

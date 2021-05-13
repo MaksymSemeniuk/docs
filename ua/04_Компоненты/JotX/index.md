@@ -6,14 +6,14 @@ JotX - улучшенный и дополненный Jot
 
 ```php
     [!JotX? &config=`faq` !] - Вопрос-Ответ
-    [!JotX? &config=`tree` !] - Древовидные комментарии
-    [!JotX? &config=`tree-ajax` !] - Древовидные комментарии с аякс
+    [!JotX? &config=`tree` !] - Древовидные Коментарии
+    [!JotX? &config=`tree-ajax` !] - Древовидные Коментарии с аякс
 ```
 
 ### Режимы вынесены в файлы.
 
 ```php
-    [!JotX? &action=`lastcomments` !] - Последние комментарии
+    [!JotX? &action=`lastcomments` !] - Последние Коментарии
 ```
 
 ### Новые параметры.
@@ -29,16 +29,16 @@ JotX - улучшенный и дополненный Jot
 * **docids** - список docid, можно указывать диапазоны
 * **tagids** - список tagid, через запятую
 * **userids** - список id пользователей, через запятую. Для веб-пользователей - отрицательные.
-* **limit** - ограничение количества комментариев
+* **limit** - ограничение количества Коментариев
 
     ```php
-    [!JotX? &action=`lastcomments` &limit=`10` !] - 10 последних комментариев со всего сайта
-    [!JotX? &docids=`*` &sortby=`rand()` &limit=`1` !] - случайный комментарий со всего сайта
+    [!JotX? &action=`lastcomments` &limit=`10` !] - 10 последних Коментариев со всего сайта
+    [!JotX? &docids=`*` &sortby=`rand()` &limit=`1` !] - случайный Коментар со всего сайта
     [!JotX? &docids=`1,2,5-10,20*,30-35,40**,` !] - так тоже можно :)
 
 Параметры docids и tagids используются для вывода данных, docid и tagid - для ввода текущих, поэтому они разделены
 
-* **depth** - глубина древовидных комментариев (по умолчанию 10)
+* **depth** - глубина древовидных Коментариев (по умолчанию 10)
 * **upc** - как считать userpostcount (0 - не считать, 1(по умолчанию) - считать для всего сайта , 2 - считать для текущей страницы)
 
 * **js и jsFile** - аналоги css и cssFile
@@ -63,7 +63,7 @@ onProcessPassiveActions,onBeforeGetCommentCount,onBeforeGetComments,onGetComment
 onReturnOutput,onSetDefaultOutput,onBeforeGetUserPostCount,onSetFormOutput,onSetCommentsOutput
 
 ### Плагины на события.
-Их можно подгружать как из сниппетов, так и из файлов. Можно прописывать через запятую.
+Их можно подгружать как из сніпетов, так и из файлов. Можно прописывать через запятую.
 
 ```php
     [!JotX? &onBeforeValidateFormField=`nolink,onlyrus` !]
@@ -72,23 +72,23 @@ onReturnOutput,onSetDefaultOutput,onBeforeGetUserPostCount,onSetFormOutput,onSet
 В состав входят плагины:
 
 * **subscribe** (события: onBeforeFirstRun,onSaveComment,onBeforeRunActions,onBeforeProcessPassiveActions,onGetSubscriptions,onBeforeGetUserInfo,onBeforeNotify) - 
-подписка гостей сайта на уведомления о новых комментариях. Также необходимы 2 исправления в шаблонах: чекбокс и текст об отписке, см. пример в tree.config.php
+подписка гостей сайта на уведомления о новых Коментариях. Также необходимы 2 исправления в шаблонах: чекбокс и текст об отписке, см. Приклад в tree.config.php
 * **ajax** (события: onSetCommentsOutput,onSetFormOutput,onReturnOutput) - загрузка всего через аякс
 * **antispam** (события: onBeforePOSTProcess,onSetFormOutput) - борьба с ботами путём добавления скрытого поля-ловушки
-* **nolink** (событие: onBeforeValidateFormField) - запретить ссылки в комментариях
+* **nolink** (событие: onBeforeValidateFormField) - запретить ссылки в Коментариях
 * **onlyrus** (событие: onBeforeValidateFormField) - запретить нерусский спам
 * **notifyfaq** (события: onProcessForm,onBeforeNotify) - уведомление пользователю об ответе на вопрос в FAQ
 * **rss** (события: onBeforeProcessPassiveActions,onSetCommentsOutput) - добавляет ссылку на RSS-ленту
-* **rating** (события: onFirstRun,onReturnOutput) - добавляет голосование за комментарий
+* **rating** (события: onFirstRun,onReturnOutput) - добавляет голосование за Коментар
 
 Будут и другие.
 
 ### Прочие исправления.
 
 * Система уведомлений объединена и переделана под PHPMailer
-* Оптимизированы запросы в базу, в том числе и для userpostcount. Поля пользователей объединены с полями комментариев.
+* Оптимизированы запросы в базу, в том числе и для userpostcount. Поля пользователей объединены с полями Коментариев.
 * Исправлены старые баги с удалением/добавлением полей
-* Постраничная пагинация, в древовидных комментариях она тоже работает, если включить
+* Постраничная пагинация, в древовидных Коментариях она тоже работает, если включить
 * Всякие мелочи, типа граватаров
 
 ### Полезные ссылки

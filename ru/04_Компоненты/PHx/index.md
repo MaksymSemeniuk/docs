@@ -2,13 +2,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>PHx Дополнительные возможности для тегов MODX Evolution</h3>
 Дополнительные возможности для отображения плейсхолдеров, тегов MODx (включая TV параметры) и теги настроек сайта.
-<p>PHx (Placeholders Xtended) добавляет новые возможности для отображения плейсхолдеров, тегов MODx (включая TV параметры) и теги настроек сайта. Рекурсивный парсер позволяет использовать вложенные теги. Возможно создавать свои модификаторы, путем создания сниппетов.</p>
+<p>PHx (Placeholders Xtended) добавляет новые возможности для отображения плейсхолдеров, тегов MODx (включая TV параметры) и теги настроек сайта. Рекурсивный парсер позволяет использовать вложенные теги. Возможно создавать свои модификаторы, путем создания сніпетов.</p>
 <p>PHx поддерживает следующие теги MODx:</p>
 <pre class="brush: html;">
 [+placeholder+]
-[*теги содержимого*] ([*content*], [*pagetitle*], например)
+[*теги содержимого*] ([*content*], [*pagetitle*], наПриклад)
 [*TV параметры*]
-[(теги настройки)] (например, [(base_url)], [(site_name)] и другие)
+[(теги настройки)] (наПриклад, [(base_url)], [(site_name)] и другие)
 </pre>
 <h3 class="sub-header text-bold">Использование</h3>
 <p>Обычный плейсхолдер вида <code>[+placeholder+]</code> легко превращается в плейсхолдер PHx: <code>[+placeholder:esc+]</code>. Тоже самое вы можете сделать с тегом содержимого:</p>
@@ -170,15 +170,15 @@
 <pre class="brush: html;">[+phx:if=`[!UltimateParent!]`:is=`1`:and:isnot=`[*id*]`:then=`{{ChildChunk}}`:else=`{{ParentChunk}}`+]</pre>
 
 <h3 class="sub-header text-bold"><span class="text-bold">then =`template`</span></h3>
-<p>- Значение <span class="text-bold">template</span> отображается, когда все условия верны. Здесь можно указать вызов <code>{{чанка}}</code>, <code>[[сниппета]]</code> или же чистый HTML.</p>
+<p>- Значение <span class="text-bold">template</span> отображается, когда все условия верны. Здесь можно указать вызов <code>{{чанка}}</code>, <code>[[сніпета]]</code> или же чистый HTML.</p>
 <h3 class="sub-header text-bold"><span class="text-bold">else =`template`</span></h3>
-<p>- Значение <span class="text-bold">template</span> отображается, когда все условия не верны. Здесь можно указать вызов <code>{{чанка}}</code>, <code>[[сниппета]]</code> или же чистый HTML.</p>
+<p>- Значение <span class="text-bold">template</span> отображается, когда все условия не верны. Здесь можно указать вызов <code>{{чанка}}</code>, <code>[[сніпета]]</code> или же чистый HTML.</p>
 
 <h3 class="sub-header text-bold"><span class="text-bold">show</span></h3>
 <p>- Используется подобно then, но в качестве шаблона для вывода используется исходное значение. Выполняется, если условия верны.</p>
 <pre class="brush: html;">[+myplaceholder:len:gt=`3`:show+]</pre>
 
-<h2 class="page-header">Примеры</h2>
+<h2 class="page-header">Приклады</h2>
 <pre class="brush: html;">
 [+myplaceholder:is=`myvalue`:then=`Правильно`:else=`Неправильно`+]
 </pre>

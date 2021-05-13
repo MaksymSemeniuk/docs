@@ -14,6 +14,6 @@ string userLoggedIn();
 
 ***
 
-####Пример:
+####Приклад:
 
 	$txt = $modx->userLoggedIn();

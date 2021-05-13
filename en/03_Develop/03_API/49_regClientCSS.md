@@ -13,7 +13,7 @@ print
 
 ***
 
-####Пример
+####Приклад
 
 	$myCSS = '<style media="screen">* { margin:0; padding:0 }</style>'; 
 	$modx->regClientCSS( $myCSS );

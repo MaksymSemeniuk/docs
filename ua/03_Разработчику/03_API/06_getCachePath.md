@@ -4,7 +4,7 @@ string getCachePath();
 
 ***
 
-####Пример
+####Приклад
 
 ````php
 echo $modx->getCachePath();

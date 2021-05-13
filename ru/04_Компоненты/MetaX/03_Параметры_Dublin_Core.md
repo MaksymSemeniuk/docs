@@ -1,7 +1,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>MetaX: Параметры Dublin Core </h3> 
-Параметры Dublin Core сниппета MetaX.	
+Параметры Dublin Core сніпета MetaX.	
 <br>
 <div class="panel-group accordion">
 	<div class="panel panel-default">
@@ -11,10 +11,10 @@
 		<div id="collapse425" class="panel-collapse collapse">
 			<div class="panel-body">
 				<span class="text-bold">Формат:</span> 0 | 1<br>
-				<span class="text-bold">Значение по умолчанию:</span> 0<br>
-				<span class="text-bold">Примечание:</span> <br>0 - выключено (по умолчанию)<br>
+				<span class="text-bold">Значення за замовчуванням:</span> 0<br>
+				<span class="text-bold">Примітка:</span> <br>0 - выключено (по умолчанию)<br>
 				1 - включено<br>
-				<span class="text-bold">Пример:</span>
+				<span class="text-bold">Приклад:</span>
 				<pre class="brush: html;">&dublin=`1`</pre>
 			</div>
 		</div>
@@ -26,10 +26,10 @@
 		</div>
 		<div id="collapse426" class="panel-collapse collapse">
 			<div class="panel-body">
-				<span class="text-bold">Формат:</span> строка<br>
-				<span class="text-bold">Значение по умолчанию:</span> site_name<br>
-				<span class="text-bold">Примечание:</span> <br>
-				<span class="text-bold">Пример:</span>
+				<span class="text-bold">Формат:</span> рядок<br>
+				<span class="text-bold">Значення за замовчуванням:</span> site_name<br>
+				<span class="text-bold">Примітка:</span> <br>
+				<span class="text-bold">Приклад:</span>
 				<pre class="brush: html;">&dccontributor=``</pre>
 			</div>
 		</div>
@@ -41,10 +41,10 @@
 		</div>
 		<div id="collapse427" class="panel-collapse collapse">
 			<div class="panel-body">
-				<span class="text-bold">Формат:</span> строка | TV-параметр<br>
-				<span class="text-bold">Значение по умолчанию:</span> dccoverage<br>
-				<span class="text-bold">Примечание:</span> <br>
-				<span class="text-bold">Пример:</span>
+				<span class="text-bold">Формат:</span> рядок | TV-параметр<br>
+				<span class="text-bold">Значення за замовчуванням:</span> dccoverage<br>
+				<span class="text-bold">Примітка:</span> <br>
+				<span class="text-bold">Приклад:</span>
 				<pre class="brush: html;">&dccoverage=``</pre>
 			</div>
 		</div>
@@ -56,10 +56,10 @@
 		</div>
 		<div id="collapse428" class="panel-collapse collapse">
 			<div class="panel-body">
-				<span class="text-bold">Формат:</span> строка<br>
-				<span class="text-bold">Значение по умолчанию:</span> site_name<br>
-				<span class="text-bold">Примечание:</span> <br>
-				<span class="text-bold">Пример:</span>
+				<span class="text-bold">Формат:</span> рядок<br>
+				<span class="text-bold">Значення за замовчуванням:</span> site_name<br>
+				<span class="text-bold">Примітка:</span> <br>
+				<span class="text-bold">Приклад:</span>
 				<pre class="brush: html;">&dccreator=`Имен Отчествович Фамилиев`</pre>
 			</div>
 		</div>
@@ -72,9 +72,9 @@
 		<div id="collapse429" class="panel-collapse collapse">
 			<div class="panel-body">
 				<span class="text-bold">Формат:</span> <br>
-				<span class="text-bold">Значение по умолчанию:</span> <br>
-				<span class="text-bold">Примечание:</span> Управление значением поля даты в формате YYYY-MM-DD. Если параметр не указан, выводится дата последнего редактирования документа.<br>
-				<span class="text-bold">Пример:</span>
+				<span class="text-bold">Значення за замовчуванням:</span> <br>
+				<span class="text-bold">Примітка:</span> Управление значением поля даты в формате YYYY-MM-DD. Если параметр не указан, выводится дата последнего редактирования документа.<br>
+				<span class="text-bold">Приклад:</span>
 				<pre class="brush: html;">&dcdate=``</pre>
 			</div>
 		</div>
@@ -86,10 +86,10 @@
 		</div>
 		<div id="collapse430" class="panel-collapse collapse">
 			<div class="panel-body">
-				<span class="text-bold">Формат:</span> строка<br>
-				<span class="text-bold">Значение по умолчанию:</span> site_name<br>
-				<span class="text-bold">Примечание:</span> <br>
-				<span class="text-bold">Пример:</span>
+				<span class="text-bold">Формат:</span> рядок<br>
+				<span class="text-bold">Значення за замовчуванням:</span> site_name<br>
+				<span class="text-bold">Примітка:</span> <br>
+				<span class="text-bold">Приклад:</span>
 				<pre class="brush: html;">&dcpublisher=`Имен Отчествович Фамилиев`</pre>
 			</div>
 		</div>
@@ -102,9 +102,9 @@
 		<div id="collapse431" class="panel-collapse collapse">
 			<div class="panel-body">
 				<span class="text-bold">Формат:</span> имя TV параметра<br>
-				<span class="text-bold">Значение по умолчанию:</span> dcrelation<br>
-				<span class="text-bold">Примечание:</span> Имя TV-параметра, содержащего ID документа или URL соответствующего документа<br>
-				<span class="text-bold">Пример:</span>
+				<span class="text-bold">Значення за замовчуванням:</span> dcrelation<br>
+				<span class="text-bold">Примітка:</span> Имя TV-параметра, содержащего ID документа или URL соответствующего документа<br>
+				<span class="text-bold">Приклад:</span>
 				<pre class="brush: html;">&dcrelation=``</pre>
 			</div>
 		</div>
@@ -112,14 +112,14 @@
 	
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<h4 class="panel-title"><a id="432"></a><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse432"><span class="text-bold">&dcsource</span> - Название TV-параметра, содержащего ID или URL исходного документа</a></h4>
+			<h4 class="panel-title"><a id="432"></a><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse432"><span class="text-bold">&dcsource</span> - Назва TV-параметра, содержащего ID или URL исходного документа</a></h4>
 		</div>
 		<div id="collapse432" class="panel-collapse collapse">
 			<div class="panel-body">
 				<span class="text-bold">Формат:</span> имя TV параметра<br>
-				<span class="text-bold">Значение по умолчанию:</span> dcsource<br>
-				<span class="text-bold">Примечание:</span> <br>
-				<span class="text-bold">Пример:</span>
+				<span class="text-bold">Значення за замовчуванням:</span> dcsource<br>
+				<span class="text-bold">Примітка:</span> <br>
+				<span class="text-bold">Приклад:</span>
 				<pre class="brush: html;">&dcsource=``</pre>
 			</div>
 		</div>
@@ -132,9 +132,9 @@
 		<div id="collapse433" class="panel-collapse collapse">
 			<div class="panel-body">
 				<span class="text-bold">Формат:</span> поле документа<br>
-				<span class="text-bold">Значение по умолчанию:</span> pagetitle<br>
-				<span class="text-bold">Примечание:</span> <br>
-				<span class="text-bold">Пример:</span>
+				<span class="text-bold">Значення за замовчуванням:</span> pagetitle<br>
+				<span class="text-bold">Примітка:</span> <br>
+				<span class="text-bold">Приклад:</span>
 				<pre class="brush: html;">&dctitle=`longtitle`</pre>
 			</div>
 		</div>
@@ -147,9 +147,9 @@
 		<div id="collapse434" class="panel-collapse collapse">
 			<div class="panel-body">
 				<span class="text-bold">Формат:</span> имя TV параметра | тип<br>
-				<span class="text-bold">Значение по умолчанию:</span> Нет<br>
-				<span class="text-bold">Примечание:</span> <br>
-				<span class="text-bold">Пример:</span>
+				<span class="text-bold">Значення за замовчуванням:</span> Нет<br>
+				<span class="text-bold">Примітка:</span> <br>
+				<span class="text-bold">Приклад:</span>
 				<pre class="brush: html;">&dctype=``</pre>
 			</div>
 		</div>

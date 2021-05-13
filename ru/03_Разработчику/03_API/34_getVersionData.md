@@ -4,7 +4,7 @@ array getVersionData();
 
 ***
 
-####Пример
+####Приклад
 
 	$txt = $modx->getVersionData();
 	//вернет информацию о версии MODX.

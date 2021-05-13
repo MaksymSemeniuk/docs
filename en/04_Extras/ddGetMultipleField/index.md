@@ -1,9 +1,9 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<h3>ddGetMultipleField Сниппет для вывода данных </h3> 
-Сниппет для вывода данных, разделённых через определённые разделители. Удобно использовать для вывода значений полей документов.	
+<h3>ddGetMultipleField сніпет для вывода данных </h3> 
+сніпет для вывода данных, разделённых через определённые разделители. Удобно использовать для вывода значений полей документов.	
 <br>
-<p>Сниппет для вывода данных, разделённых через определённые разделители. Удобно использовать для вывода значений полей документов, сформированных виджетом <a href="128.html">mm_ddMultipleFields</a>.</p>
+<p>сніпет для вывода данных, разделённых через определённые разделители. Удобно использовать для вывода значений полей документов, сформированных виджетом <a href="128.html">mm_ddMultipleFields</a>.</p>
 <p>Автор: <i class="fa fa-github fa-lg text-primary"></i> <a href="https://github.com/DivanDesign/MODXEvo.snippet.ddGetMultipleField" rel="nofollow" target="_blank">DivanDesign</a></p>
 
 <h3 class="sub-header">Возможности:</h3>
@@ -14,7 +14,7 @@
 	<li>Сортировка строк по значениям колонок перед выводом ('ASC', 'DESC', 'RAND', 'REVERSE'), в том числе множественная сортировка. Параметры «sortDir» и «sortBy».</li>
 	<li>Вывод значений через разделители строк и колонок. Параметры «rowGlue» и «colGlue».</li>
 	<li>Удаление пустых значений колонок и строк перед выводом. Параметры «removeEmptyRows» и «removeEmptyCols».</li>
-	<li>Типографирование значений перед выводом (используется сниппет <a href="ddtypograph/index.html">ddTypograph</a>). Параметр «typography».</li>
+	<li>Типографирование значений перед выводом (используется сніпет <a href="ddtypograph/index.html">ddTypograph</a>). Параметр «typography».</li>
 	<li><span style="word-spacing:nowrap;">URL-кодирование</span> результата перед выводом. Параметр «urlencode».</li>
 	<li>Вывод результата в JSON. Параметр «outputFormat».</li>
 	<li>Вывод значений по шаблонам (чанкам) строк и колонок (в шаблоне строк также доступен плэйсхолдер <span>[</span>+rowNumber+] с номером строки). Параметры «rowTpl» и «colTpl».</li>
@@ -23,20 +23,20 @@
 
 <h2 class="page-header">Документация</h2>
 <p>Из пары параметров «inputString»/«inputString_docField» необходимо передавать лишь один.</p>
-<h3 class="sub-header">Описание параметров</h3>
+<h3 class="sub-header">Опис параметров</h3>
 <table class="table table-bordered table-vcenter flip-content">
 	<thead class="flip-content bordered-palegreen">
 		<tr>
-			<th>Название</th>
-			<th>Описание</th>
+			<th>Назва</th>
+			<th>Опис</th>
 			<th>Допустимые значения</th>
-			<th>Значение по умолчанию</th>
+			<th>Значення за замовчуванням</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td class="em">inputString<span class="help" title="Обязательный параметр">*</span></td>
-			<td colspan="1">Исходная строка, содержащая значение с разделителями.</td>
+			<td colspan="1">Исходная рядок, содержащая значение с разделителями.</td>
 			<td>{separated string}</td>
 			<td>–</td>
 		</tr>
@@ -54,7 +54,7 @@
 		</tr>
 		<tr>
 			<td>rowDelimiter</td>
-			<td colspan="1">Разделитель между строками в исходной строке.</td>
+			<td colspan="1">Разделитель между рядокми в исходной строке.</td>
 			<td>{string; regexp}</td>
 			<td>'||'</td>
 		</tr>
@@ -84,7 +84,7 @@
 		</tr>
 		<tr>
 			<td>filter</td>
-			<td colspan="1">Фильтр по значениям колонок. Например, при '0::a||0::b||1::1' выведутся только строки, в которых значение колонки 0 равно 'a' или 'b' и значение колонки 1 равно '1'.</td>
+			<td colspan="1">Фильтр по значениям колонок. НаПриклад, при '0::a||0::b||1::1' выведутся только строки, в которых значение колонки 0 равно 'a' или 'b' и значение колонки 1 равно '1'.</td>
 			<td>{separated string}</td>
 			<td>–</td>
 		</tr>
@@ -102,7 +102,7 @@
 		</tr>
 		<tr>
 			<td>sortBy</td>
-			<td colspan="1">Номер колонки (нумеруются с ноля), по которой необходимо сортировать. Для множественной сортировки параметры указываются через запятую (например: '0,1').</td>
+			<td colspan="1">Номер колонки (нумеруются с ноля), по которой необходимо сортировать. Для множественной сортировки параметры указываются через запятую (наПриклад: '0,1').</td>
 			<td>{comma separated string}</td>
 			<td>0</td>
 		</tr>
@@ -126,7 +126,7 @@
 		</tr>
 		<tr>
 			<td>rowGlue</td>
-			<td colspan="1">Разделитель (объединитель) между строками при выводе. Может использоваться совместно с шаблоном «rowTpl».</td>
+			<td colspan="1">Разделитель (объединитель) между рядокми при выводе. Может использоваться совместно с шаблоном «rowTpl».</td>
 			<td>{string}</td>
 			<td>–</td>
 		</tr>
@@ -169,7 +169,7 @@
 			<td colspan="1">Шаблон внешней обёртки (при «outputFormat» != 'array').
 				<p>Доступные плэйсхолдеры:</p>
 				<ul>
-					<li>[+result+] – результат сниппета;</li>
+					<li>[+result+] – результат сніпета;</li>
 					<li>[+total+] – общее количество строк;</li>
 					<li>[+resultTotal+] – количество возвращаемых строк;</li>
 					<li>[+rowY.colX+] – значение (где «Y» – номер строки, «X» – номер колонки).</li>
@@ -180,13 +180,13 @@
 		</tr>
 		<tr>
 			<td>placeholders</td>
-			<td colspan="1">Дополнительные данные в виде <a href="https://en.wikipedia.org/wiki/Query_string" target="_blank">query string</a> которые будут переданы в шаблоны «outerTpl», «rowTpl» and «colTpl». Например, «pladeholder1=value1&pagetitle=My awesome pagetitle!».</td>
+			<td colspan="1">Дополнительные данные в виде <a href="https://en.wikipedia.org/wiki/Query_string" target="_blank">query string</a> которые будут переданы в шаблоны «outerTpl», «rowTpl» and «colTpl». НаПриклад, «pladeholder1=value1&pagetitle=My awesome pagetitle!».</td>
 			<td>{query string}</td>
 			<td>–</td>
 		</tr>
 		<tr>
 			<td>urlencode</td>
-			<td colspan="1">Надо URL-кодировать результирующую строку (при «outputFormat» != 'array')? Строка кодируется согласно RFC 3986.</td>
+			<td colspan="1">Надо URL-кодировать результирующую строку (при «outputFormat» != 'array')? рядок кодируется согласно RFC 3986.</td>
 			<td>{0; 1}</td>
 			<td>0</td>
 		</tr>
@@ -198,19 +198,19 @@
 		</tr>
 		<tr>
 			<td>resultToPlaceholder</td>
-			<td colspan="1">Имя внешнего плэйсхолдера, в который нужно сохранить результат работы сниппета вместо обычного вывода. Если параметр не задан – сниппет просто возвращает реузльтат.</td>
+			<td colspan="1">Имя внешнего плэйсхолдера, в который нужно сохранить результат работы сніпета вместо обычного вывода. Если параметр не задан – сніпет просто возвращает реузльтат.</td>
 			<td>{string}</td>
 			<td>–</td>
 		</tr>
 	</tbody>
 </table>
 
-<h3 class="sub-header">Примеры</h3>
+<h3 class="sub-header">Приклады</h3>
 <h4>Вывод изображений с описаниями</h4>
-<p>Исходная строка (пусть находится в TV документа «images»):</p>
+<p>Исходная рядок (пусть находится в TV документа «images»):</p>
 <pre class="brush: html;">
 assets/images/some_img1.jpg::Изображение 1||assets/images/some_img2.jpg::Изображение 2</pre>
-<p>Вызов сниппета в шаблоне документа:</p>
+<p>Вызов сніпета в шаблоне документа:</p>
 <pre class="brush: html;">
 [[ddGetMultipleField?
 &inputString=``
@@ -227,7 +227,7 @@ assets/images/some_img1.jpg::Изображение 1||assets/images/some_img2.j
 <p>Исходное значение поля:</p>
 <pre class="brush: html;">Яблоки вкусные::100::кг||Гвозди обыкновенные::5 000::центнер||Коты::865::шт</pre>
 
-<p>Вызов сниппета (где угодно):</p>
+<p>Вызов сніпета (где угодно):</p>
 <pre class="brush: html;">
 [[ddGetMultipleField?
 &amp;inputString_docField=`prices`
@@ -257,7 +257,7 @@ assets/images/some_img1.jpg::Изображение 1||assets/images/some_img2.j
 <p>Значение TV «tags»:</p>
 <pre class="brush: html;">
 Коты, Кошки,Собаки , Медведи ,Слоны</pre>
-<p>Вызов сниппета в шаблоне документа:</p>
+<p>Вызов сніпета в шаблоне документа:</p>
 <pre class="brush: html;">
 [[ddGetMultipleField?
 &inputString=`Manager, General`
@@ -297,4 +297,4 @@ assets/images/some_img1.jpg::Изображение 1||assets/images/some_img2.j
 <pre class="brush: html;">[+rowNumber+]. [+col0+], весит [+col1+], [+col2+] – &lt;i&gt;[+price+]&lt;/i&gt;&lt;br /&gt;</pre>
 <p>Код чанка «cats_item_color» (вместо «[+colorTitle+]» подставится «Шерсть густая, хорошая»):</p>
 <pre class="brush: html;">&lt;span title="[+colorTitle+]"&gt;[+val+]&lt;/span&gt;</pre>
-<p><i>Примеров здесь можно напридумывать великое множество.</i></p>
+<p><i>Прикладов здесь можно напридумывать великое множество.</i></p>

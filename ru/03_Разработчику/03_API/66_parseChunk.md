@@ -8,7 +8,7 @@
 string parseChunk(string $chunkName, array $chunkArr[, string $prefix[, string $suffix]]);
 ```
 
-**$chunkName** - название чанка (чувствительно к регистру!)
+**$chunkName** - Назва чанка (чувствительно к регистру!)
 
 **$chunkArr** - массив со значениями плейсхолдеров
 
@@ -16,7 +16,7 @@ string parseChunk(string $chunkName, array $chunkArr[, string $prefix[, string $
 
 **$suffix** - значение завершения плейсхолдера. Обычно используется '+]', по умолчанию: }
 
-## Пример:
+## Приклад:
 
 **Вызов:**
 ```

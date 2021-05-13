@@ -1,7 +1,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>Ditto: Параметры summary </h3> 
-Параметры summary сниппета Ditto.	
+Параметры summary сніпета Ditto.	
 <br>
 <div class="panel-group accordion">
 <div class="panel panel-default">
@@ -11,9 +11,9 @@
 <div id="collapse523" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> 0 | 1<br>
-<span class="text-bold">Значение по умолчанию:</span> 1<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 1<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&truncSplit=`0`</pre>
 </div>
 </div>
@@ -26,11 +26,11 @@
 <div id="collapse597" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> 0 | 1<br>
-<span class="text-bold">Значение по умолчанию:</span> 1<br>
-<span class="text-bold">Примечание:</span> <br> 
+<span class="text-bold">Значення за замовчуванням:</span> 1<br>
+<span class="text-bold">Примітка:</span> <br> 
 <span class="text-bold">0</span> - выкл<br>
 <span class="text-bold">1</span> - вкл<br>
-<p><span class="text-bold">Пример:</span></p>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&trunc=`0`</pre>
 </div>
 </div>
@@ -42,10 +42,10 @@
 </div>
 <div id="collapse598" class="panel-collapse collapse">
 <div class="panel-body">
-<span class="text-bold">Формат:</span> строка<br>
-<span class="text-bold">Значение по умолчанию:</span> &lt;!-- splitter --&gt;<br>
-<span class="text-bold">Примечание:</span> Любой уникальный текст или код, который содержится в содержании каждого документа<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Формат:</span> рядок<br>
+<span class="text-bold">Значення за замовчуванням:</span> &lt;!-- splitter --&gt;<br>
+<span class="text-bold">Примітка:</span> Любой уникальный текст или код, который содержится в содержании каждого документа<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&truncAt=``</pre>
 </div>
 </div>
@@ -58,9 +58,9 @@
 <div id="collapse599" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> число<br>
-<span class="text-bold">Значение по умолчанию:</span> 300<br>
-<span class="text-bold">Примечание:</span> Любое число больше чем &truncOffset<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 300<br>
+<span class="text-bold">Примітка:</span> Любое число больше чем &truncOffset<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&truncLen=`800`</pre>
 </div>
 </div>
@@ -73,9 +73,9 @@
 <div id="collapse600" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> число<br>
-<span class="text-bold">Значение по умолчанию:</span> 30<br>
-<span class="text-bold">Примечание:</span> Любое число не превышающее &truncLen<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 30<br>
+<span class="text-bold">Примітка:</span> Любое число не превышающее &truncLen<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&truncOffset=`50`</pre>
 </div>
 </div>
@@ -87,10 +87,10 @@
 </div>
 <div id="collapse601" class="panel-collapse collapse">
 <div class="panel-body">
-<span class="text-bold">Формат:</span> строка<br>
-<span class="text-bold">Значение по умолчанию:</span> Read more...<br>
-<span class="text-bold">Примечание:</span> Любой текст или отрывок html-кода<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Формат:</span> рядок<br>
+<span class="text-bold">Значення за замовчуванням:</span> Read more...<br>
+<span class="text-bold">Примітка:</span> Любой текст или отрывок html-кода<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&truncText=`Читать далее...`</pre>
 </div>
 </div>
@@ -103,12 +103,12 @@
 <div id="collapse602" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> имя чанка | @FILE | @CODE<br>
-<span class="text-bold">Значение по умолчанию:</span> &truncText<br>
-<span class="text-bold">Примечание:</span> <br> 
-Любое валидное название чанка<br>
+<span class="text-bold">Значення за замовчуванням:</span> &truncText<br>
+<span class="text-bold">Примітка:</span> <br> 
+Любое валидное Назва чанка<br>
 Код через @CODE<br>
 Файл через @FILE<br>
-<p><span class="text-bold">Пример:</span></p>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&tplTrunc=``</pre>
 </div>
 </div>

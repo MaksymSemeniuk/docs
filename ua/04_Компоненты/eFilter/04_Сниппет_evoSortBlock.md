@@ -1,15 +1,15 @@
-Сниппет для вывода блока с настройков сортировки и выбора количества товаров на странице.
+сніпет для вывода блока с настройков сортировки и выбора количества товаров на странице.
 
 ## evoSortBlock
-Сниппет для формирования блока сортировки. Из приятных вещей.
+сніпет для формирования блока сортировки. Из приятных вещей.
 
 
 
 ## Параметры
 1. displayConfig  настройка сэлекта или ссылок для указания количества товаров на странице.
-Пример: 20||30||40||все==all.
+Приклад: 20||30||40||все==all.
 2. sortConfig  настройка  ссылок для указания поля по которому товары сортируються.
-Пример: По название==pagetitle||По индексу==menuindex||Цена от маленькой==price:asc||Цена от большой==price:desc
+Приклад: По Назва==pagetitle||По индексу==menuindex||Цена от маленькой==price:asc||Цена от большой==price:desc
 3. ajax - использовать ли ajax по умолчанию ноль.
 4. changeSortByClickField - изменять направление сортировки при повторном клике по параметру сортировки. 1/0. По умолчанию 0.
 Параметр необходим если у нас нет блока для выбора направление, а надо изменять направление при клике второй раз по параметру поля.
@@ -18,7 +18,7 @@
 #### Обертка
 1. ownerTpl - Основная обертка блока.
     Плейсхолдеры ```[+class+] [+display.block+] [+sort.block+] [+sort.direction+]```.
-    Пример: ```<div class="[+class+]">[+display.block+][+sort.block+]</div>```
+    Приклад: ```<div class="[+class+]">[+display.block+][+sort.block+]</div>```
 
     * class Плейсхолдер из класcами для обертки которые необходимы для работы js, а именно sort-wrap и ajax
     * display.block блок выбора количества товаров
@@ -27,21 +27,21 @@
 #### Выбор количества товаров
 1. displayOwnerTpl - обертка блока для выбора количества элементов на странице.
     Плейсхолдеры: ```[+class+]">[+wrapper+]```
-    Пример: ```<select class="[+class+]">[+wrapper+]</select>```
-    Пример: ```<div class="[+class+]">[+wrapper+]</div>```
+    Приклад: ```<select class="[+class+]">[+wrapper+]</select>```
+    Приклад: ```<div class="[+class+]">[+wrapper+]</div>```
 
 2. displayRowTpl - Шаблон вывода строки. ( option для сэлекта или тег a для блока).
     Плейсхолдеры: ```[+value+],[+selected+],[+data+],[+class+],[+caption+] ```
-    Пример: ``` <option value="[+value+]" [+selected+] >[+caption+]</option>```
-    Пример: ``` <a [+data+] class="[+class+]">[+caption+]</a> ```
+    Приклад: ``` <option value="[+value+]" [+selected+] >[+caption+]</option>```
+    Приклад: ``` <a [+data+] class="[+class+]">[+caption+]</a> ```
 #### Выбор поля для сортировки
 1. sortOwnerTpl  - обертка блока для выбора поля по которому элементы сортируются на странице.
     Плейсхолдеры: ```[+wrapper+]```
-    Пример: ```<ul>[+wrapper+]</ul>```
+    Приклад: ```<ul>[+wrapper+]</ul>```
 
 2. sortRowTpl - Шаблон вывода ссылки для выбора поля.
         Плейсхолдеры: ```[+class+],[+data+] [+caption+]```
-        Пример: ```<a class="[+class+]" [+data+]>[+caption+]</a>```
+        Приклад: ```<a class="[+class+]" [+data+]>[+caption+]</a>```
 
 #### Выбор направления сортировки
 1. sortDirectionTpl - обертка блока выбора направления.
@@ -51,11 +51,11 @@
 2. sortDirectionUpTpl - шаблон ссылки для выбора направления сортировки asc
     Плейсхолдеры: ```[+class+][+data+]```
     class - css клас
-    data - Дата атрибут data-value в котором хранится текущее поле а направление сортировки asc. Пример price:asc
+    data - Дата атрибут data-value в котором хранится текущее поле а направление сортировки asc. Приклад price:asc
 3. sortDirectionDescTpl - шаблон ссылки для выбора направления сортировки desc
     Плейсхолдеры: ```[+class+][+data+]```
     class - css клас
-    data - Дата атрибут data-value в котором хранится текущее поле а направление сортировки asc. Пример price:desc
+    data - Дата атрибут data-value в котором хранится текущее поле а направление сортировки asc. Приклад price:desc
 
 
 ##### Классы
@@ -106,14 +106,14 @@
 
 
 
-##### Пример
+##### Приклад
     [!evoSortBlock?
         &ownerTpl=`<div  class="sorting-block__filters [+class+]"><form action="#">[+display.block+][+sort.block+]</form></div>`
         &displayOwnerTpl=`<div class="sorting-block__filters-amount"><span class="sorting-block__filters-label">Показывать:</span><div class="sorting-block__select"><div class="inline-select"><select class="decor-select js-select[+class+]">[+wrapper+]</select></div></div></div>`
         &sortOwnerTpl=`<div class="sorting-block__filters-type"><span class="sorting-block__filters-label sorting-block__filters-label--type">Сортировать:</span><div class="sorting-block__filters-block"><span class="sorting-block__filters-mobile-active"><span class="sorting-block__filters-mobile-active-inner">По популярности</span></span><ul class="sorting-block__filters-list">[+wrapper+]</ul></div></div>`
         &sortRowTpl=`<li class="sorting-block__filters-item"><a href="#"  [+data+] [+selected+]  class="sorting-block__filters-link [+class+]">[+caption+]</a></li>`
         &sortActiveClass=`is-active`
-        &sortConfig=`Название==pagetitle||Дата поступления==menuindex||Цена==price`
+        &sortConfig=`Назва==pagetitle||Дата поступления==menuindex||Цена==price`
         &ajax=`1`
     !]
 

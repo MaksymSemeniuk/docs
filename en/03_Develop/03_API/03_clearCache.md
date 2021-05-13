@@ -6,7 +6,7 @@ boolean clearCache([string $type]);
 
 ***
 
-####Пример
+####Приклад
 
 ````php
 //Очистит кэш сайта.

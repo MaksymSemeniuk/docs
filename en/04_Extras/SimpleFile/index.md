@@ -7,7 +7,7 @@ SimpleFiles - прикрепляем к странице файлы Evolution CM
 <p>Скачивать здесь: <i class="fa fa-github fa-lg text-primary"></i> <a href="https://github.com/Pathologic/SimpleFiles" rel="nofollow" target="_blank">Pathologic</a></p>
 <h3 class="sub-header">Настройки плагина</h3>
 <ul>
-	<li><span class="text-bold">Tab name</span> – название вкладки;</li>
+	<li><span class="text-bold">Tab name</span> – Назва вкладки;</li>
 	<li><span class="text-bold">Controller class</span> – класс контроллера отличный от стандартного;</li>
 	<li><span class="text-bold">Templates</span> – id шаблонов, с которыми работает плагин, <strong>обязательно</strong>;</li>
 	<li><span class="text-bold">Documents</span> – то же самое, но для отдельных ресурсов;</li>
@@ -23,7 +23,7 @@ SimpleFiles - прикрепляем к странице файлы Evolution CM
 
 <h3 class="sub-header">Вывод записей</h3>
 <p>По выводу записей читаем про <a href="simplegallery/index.html" rel="nofollow" target="_blank">SimpleGallery</a>.</p>
-<p>При выводе через сниппеты-обертки sfLister и sfController доступны дополнительно виртуальные плейсхолдеры:</p>
+<p>При выводе через сніпеты-обертки sfLister и sfController доступны дополнительно виртуальные плейсхолдеры:</p>
 <ul>
 	<li><span class="text-bold">[+icon+]</span> – иконка;</li>
 	<li><span class="text-bold">[+fSize+]</span> – отформатированное значение размера;</li>
@@ -31,16 +31,16 @@ SimpleFiles - прикрепляем к странице файлы Evolution CM
 	<li><span class="text-bold">[+ext+]</span> – расширение файла;</li>
 	<li><span class="text-bold">[+filename+]</span> – имя файла без расширения;</li>
 	<li><span class="text-bold">[+basename+]</span> – имя файла с расширением;</li>
-	<li><span class="text-bold">[+e.sf_title+]</span> – название файла с экранированием символов;</li>
-	<li><span class="text-bold">[+e.sf_description+]</span> – описание файла с экранированием символов.</li>
+	<li><span class="text-bold">[+e.sf_title+]</span> – Назва файла с экранированием символов;</li>
+	<li><span class="text-bold">[+e.sf_description+]</span> – Опис файла с экранированием символов.</li>
 </ul>
 
 <h3 class="sub-header">Поля в таблице sf_files:</h3>
 <ul>
 	<li><span class="text-bold">sf_id</span> – id файла (idField);</li>
 	<li><span class="text-bold">sf_index</span> – позиция в списке;</li>
-	<li><span class="text-bold">sf_title</span> – название файла;</li>
-	<li><span class="text-bold">sf_description</span> – описание файла;</li>
+	<li><span class="text-bold">sf_title</span> – Назва файла;</li>
+	<li><span class="text-bold">sf_description</span> – Опис файла;</li>
 	<li><span class="text-bold">sf_file</span> – ссылка на файл;</li>
 	<li><span class="text-bold">sf_size</span> – размер файла;</li>
 	<li><span class="text-bold">sf_isactive</span> – флажок, чтобы скрыть какие-то файлы из вывода;</li>

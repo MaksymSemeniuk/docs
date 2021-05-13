@@ -3,7 +3,7 @@
 <h3>Количество просмотров страниц для MODX Evolution </h3>
 Количество просмотров страниц для MODX Evolution.
 <p>Устанавливаем счетчик количества просмотров. Для этого нам нужно будет создать дополнительное поле в таблице <span class="text-bold">modx_site_content</span> базы данных. Вот параметры нового поля – <span class="text-bold">count int(20) default = 0</span>.</p>
-<p>Теперь создадим сниппет <span class="text-bold">inc</span>, который будет считать количество посещений. Вызов сниппета inc нужно установить в самом верху шаблона материалов. Код сниппета:</p>
+<p>Теперь создадим сніпет <span class="text-bold">inc</span>, который будет считать количество посещений. Вызов сніпета inc нужно установить в самом верху шаблона материалов. Код сніпета:</p>
 <pre class="brush: php;">
 $table = $modx->getFullTableName("site_content");
 $id = $modx->documentObject['id'];
@@ -17,7 +17,7 @@ return $modx->db->getValue($modx->db->select('count',$modx->getFullTableName('si
 <p>Давайте рассмотрим еще один способ подсчета количества просмотров. Данный способ имеет одно преимущество перед предыдущим – его можно использовать в шаблоне Ditto (<a rel="nofollow" href="http://rekill.ru/modx/snippet-kolichestvo-prosmotrov" target="_blank">исходные материалы</a>).</p>
 <p>Итак, создадим TV-параметр <span class="text-bold">countViews</span>
 с типом ввода Text.</p>
-<p>Далее создаем сниппет <span class="text-bold">countViews</span> с таким содержанием:</p>
+<p>Далее создаем сніпет <span class="text-bold">countViews</span> с таким содержанием:</p>
 <pre class="brush: php;">
 $type = isset($type) ? $type : 'output'; 
 $table = $modx->getFullTableName('site_tmplvar_contentvalues'); 

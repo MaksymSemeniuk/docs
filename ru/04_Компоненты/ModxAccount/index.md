@@ -1,9 +1,9 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>Личный кабинет веб пользователя MODx Evo </h3>
-Сниппет для регистрации, входа, напоминания пароля и личного кабинета пользователя.
-<h3 class="sub-header">Установка</h3>
-<p>Создётся сниппет <span class="text-bold">account</span> с кодом</p>
+сніпет для регистрации, входа, напоминания пароля и личного кабинета пользователя.
+<h3 class="sub-header">Встановлення</h3>
+<p>Создётся сніпет <span class="text-bold">account</span> с кодом</p>
 <pre class="brush: php;">
 &lt;?php
 require MODX_BASE_PATH.'assets/snippets/account/snippet.account.php';
@@ -14,7 +14,7 @@ require MODX_BASE_PATH.'assets/snippets/account/snippet.account.php';
 <p>Регистрация -&gt; <span class="text-bold">register</span></p>
 <p>Профиль -&gt; <span class="text-bold">profile</span></p>
 <p>Восстановление пароля -&gt; <span class="text-bold">forgot</span></p>
-<p>и на каждой странице ставится вызов сниппета</p>
+<p>и на каждой странице ставится вызов сніпета</p>
 <p><span class="text-bold">account</span></p>
 <pre class="brush: html">
 [!account?
@@ -63,10 +63,10 @@ require MODX_BASE_PATH.'assets/snippets/account/snippet.account.php';
 &amp;userGroupId=``
 !]
 </pre>
-<p>Вместо псевдонимов контроллеров &amp;controller..., можно поставить id страниц на которых расположен тот или иной вызов сниппета.</p>
-<p><span class="text-bold">&amp;success</span> - перенаправление после удачного действия сниппета.</p>
+<p>Вместо псевдонимов контроллеров &amp;controller..., можно поставить id страниц на которых расположен тот или иной вызов сніпета.</p>
+<p><span class="text-bold">&amp;success</span> - перенаправление после удачного действия сніпета.</p>
 <p><span class="text-bold">&amp;userGroupId</span> - id групп, через запятую для нового зарегистрированного пользователя.</p>
-<p>При создании вложенности документов, как указанно выше и используя вложенные URL, вызов сниппета можно сократить до одной строчки</p>
+<p>При создании вложенности документов, как указанно выше и используя вложенные URL, вызов сніпета можно сократить до одной строчки</p>
 <pre class="brush: html">
 [!account?&amp;userGroupId=``!]
 </pre>
@@ -83,11 +83,11 @@ require MODX_BASE_PATH.'assets/snippets/account/snippet.account.php';
 
 <h3 class="sub-header">Капча</h3>
 <p>Используется эта <a href="https://github.com/64j/ModxCaptcha" rel="nofollow" target="_blank">ModxCaptcha</a></p>
-<p>Пример использования</p>
+<p>Приклад использования</p>
 <pre class="brush: html;">
 &lt;img src="assets/captcha" alt="captcha" width="120px" height="60px"/>
 </pre>
-<p>либо создать сниппет captcha и вывести его на отдельной странице с шаблоном blank и типом text/plain</p>
+<p>либо создать сніпет captcha и вывести его на отдельной странице с шаблоном blank и типом text/plain</p>
 <pre class="brush: php;">
 &lt;?php
 $chars = !empty($modx->config['captcha_words']) ? preg_replace('![^\w\d]*!', '', $modx->config['captcha_words']) : '1234567890';
@@ -112,11 +112,11 @@ imagepng($img);
 imagedestroy($img);
 ?>
 </pre>
-<p>Ветка обсуждения сниппета на форуме <a href="http://modx.im/blog/addons/4750.html" rel="nofollow" target="_blank">modx.im</a></p>
+<p>Ветка обсуждения сніпета на форуме <a href="http://modx.im/blog/addons/4750.html" rel="nofollow" target="_blank">modx.im</a></p>
 
-<h3 class="sub-header">Примеры использование</h3>
+<h3 class="sub-header">Приклады использование</h3>
 <p><span class="text-bold">Регистрация</span></p>
-<p>Например поле Адрес, вместо того чтобы предложить юзеру записать весь адрес одной строчкой, можно поставить поля для каждого значения.</p>
+<p>НаПриклад поле Адрес, вместо того чтобы предложить юзеру записать весь адрес одной строчкой, можно поставить поля для каждого значения.</p>
 <pre class="brush: html;">
 <label>Город</label>
 <input type="text" name="custom_field[address][city]" />

@@ -2,13 +2,13 @@
 
 mixed query($sql)
 
-**$sql** - строка с SQL-запросом
+**$sql** - рядок с SQL-запросом
 
 Различные методы DBAPI делают в конечном итоге запрос в базу с помощью метода "query". Если не хватает стандартных возможностей специальных методов, то можно сделать любой SQL-запрос напрямую.
 
 ***
 
-####Пример
+####Приклад
 
 	$output = '';  
 	$result = $modx->db->query( 'SELECT id, name, joined FROM `user_table` GROUP BY `member_type` ORDER BY name ASC' );   

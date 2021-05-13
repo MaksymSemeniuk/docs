@@ -5,7 +5,7 @@
 array getTemplateVar(string $idname[, string $fields[, int $docid[, int $published]]]);
 
 **$idname** -TV-параметр
-- название или идентификатор
+- Назва или идентификатор
 
 **$fields** - список параметров, которые нужно возвращаться для дополнительных TV- параметров.
 Список параметров через запятую **\*** - возвращаться все параметры
@@ -28,7 +28,7 @@ array getTemplateVar(string $idname[, string $fields[, int $docid[, int $publish
 			[type] => text 
 			[name] => МойПараметр 
 			[caption] => Заголовок 
-			[description] => Описание 
+			[description] => Опис 
 			[editor_type] => 0 
 			[category] => 0 
 			[locked] => 0 
@@ -42,7 +42,7 @@ array getTemplateVar(string $idname[, string $fields[, int $docid[, int $publish
 
 ***
 
-####Пример
+####Приклад
 
 	$txt = $modx->getTemplateVar('МойПараметр');
 	//вернет информацию по дополнительному параметру МойПараметр для текущего документа.

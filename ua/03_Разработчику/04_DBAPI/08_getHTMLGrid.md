@@ -33,7 +33,7 @@ string getHTMLGrid($dsq, $params)
 
 ***
 
-####Пример
+####Приклад
 
 	$resource = $modx->db->query('SELECT id,name FROM modx_site_tmplvars order by name');   
 	$result = $modx->db->getHTMLGrid(

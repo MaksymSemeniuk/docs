@@ -11,7 +11,7 @@ array getRow($ds, $mode)
 
 ***
 
-####Пример
+####Приклад
 
 	function getAlbum() {  
 		global $modx;  

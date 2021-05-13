@@ -11,7 +11,7 @@ false - размещение в виде внешнего файла или бл
 
 ***
 
-####Пример
+####Приклад
 
 	$src = "<script type='text/javascript'> runSlideShow('slides'); </script>"; 
 	$modx->regClientScript($src);

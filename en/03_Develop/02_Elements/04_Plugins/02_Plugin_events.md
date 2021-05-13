@@ -47,7 +47,7 @@ manager/includes/document.parser.class.inc.php
 ### OnMakeDocUrl
 
 ### OnParseDocument
-Запускается перед тем, как будут обработаны ТВ, сниппеты и чанки
+Запускается перед тем, как будут обработаны ТВ, сніпеты и чанки
 ```
 manager/includes/document.parser.class.inc.php
 ```

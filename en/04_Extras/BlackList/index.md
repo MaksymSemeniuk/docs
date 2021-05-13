@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>BlackList: Защита от спама без каптчи </h3>
 Плагин Защиты от спама без каптчи на Evolution CMS.
-<h3 class="page-header">Пример используя платного веб-сервиса Akismet</h3>
+<h3 class="page-header">Приклад используя платного веб-сервиса Akismet</h3>
 <p>Автор: <i class="fa fa-modx fa-lg"></i> <a href="https://modx.ru/razrabotchiki-na-modx/8423/" rel="nofollow" target="_blank">Алексей Либер</a></p>
 <p>Первое, что надо сделать – зарегистрироваться на сайте <a href="https://akismet.com/" rel="nofollow" target="_blank">Akismet</a> и получить ключ API. (Там просит регистрацию на Wordpress.com, т.к. класс изначально под него заточен был). Затем перейти на страницу с плагинами и библиотеками, выбрать и <a href="https://github.com/kenmoini/akismet/blob/master/src/Kenmoini/Akismet/Akismet.php" rel="nofollow" target="_blank">загрузить класс PHP 5 Akismet</a>.</p>
 <p>Загруженный файлик akismet.class.php кидаем в assets/lib/<p>
@@ -44,10 +44,10 @@ if ($e->name == 'OnBeforeLoadDocumentObject' || $e->name == 'OnLoadWebPageCache'
 	}
 }
 </pre>
-<p>Данная конструкция проверяет имя пользователя, его email и само сообщение. В примере выше используется имя поля message. Если у вас другое имя – поменяйте на ваше.</p>
+<p>Данная конструкция проверяет имя пользователя, его email и само сообщение. В Прикладе выше используется имя поля message. Если у вас другое имя – поменяйте на ваше.</p>
 <p>На момент написания поста прошло около 12-ти часов с момента установки данного решения на одном из сайтов, поймано пять писем содеражих спам, и два от клиентов доставлены адресату – т.е. вроде работает исправно.</p>
 
-<h3 class="page-header">Бесплатный пример используя доп. таблицу с емаил адресами или доменные имена</h3>
+<h3 class="page-header">Бесплатный Приклад используя доп. таблицу с емаил адресами или доменные имена</h3>
 <p>Автор: <i class="fa fa-modx fa-lg"></i> <a href="http://saniock.com" rel="nofollow" target="_blank">Saniock</a></p>
 <p><i class="fa fa-plus fa-fw"></i> бесплатна</p>
 <p><i class="fa fa-minus fa-fw"></i> надо в ручную добавлять емаил адреса или доменные имена</p>

@@ -8,7 +8,7 @@ integer getRecordCount ($data_set)
 
 ***
 
-#### Пример
+#### Приклад
 ````
 $output = '';  
 $result = $modx->db->select('make, model, color, year', 'cars', 'year > 2001');  	

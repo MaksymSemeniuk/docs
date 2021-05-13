@@ -1,7 +1,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>Ditto: Параметры search </h3> 
-Параметры search сниппета Ditto.	
+Параметры search сніпета Ditto.	
 <br>
 <div class="panel-group accordion">
 <div class="panel panel-default">
@@ -11,9 +11,9 @@
 <div id="collapse1155" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> список полей через запятую<br>
-<span class="text-bold">Значение по умолчанию:</span> content<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> content<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&searchFields=`content,tv1,tv2`</pre>
 </div>
 </div>
@@ -26,11 +26,11 @@
 <div id="collapse1156" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> caseSensitive | regex | snippet<br>
-<span class="text-bold">Значение по умолчанию:</span> нет<br>
-<span class="text-bold">Примечание:</span> caseSensitive - производить поиск с учетом регистра<br>
+<span class="text-bold">Значення за замовчуванням:</span> нет<br>
+<span class="text-bold">Примітка:</span> caseSensitive - производить поиск с учетом регистра<br>
 regex - поиск с регулярными выражениями<br>
-snippet - использование сниппетов для получения результатов<br>
-<p><span class="text-bold">Пример:</span></p>
+snippet - использование сніпетов для получения результатов<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&searchOptions=`caseSensitive`</pre>
 </div>
 </div>
@@ -42,10 +42,10 @@ snippet - использование сниппетов для получени�
 </div>
 <div id="collapse1157" class="panel-collapse collapse">
 <div class="panel-body">
-<span class="text-bold">Формат:</span> строка | @FILE | @CHUNK<br>
-<span class="text-bold">Значение по умолчанию:</span> пусто<br>
-<span class="text-bold">Примечание:</span> JSON строка с разделителями для списка опций. <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Формат:</span> рядок | @FILE | @CHUNK<br>
+<span class="text-bold">Значення за замовчуванням:</span> пусто<br>
+<span class="text-bold">Примітка:</span> JSON рядок с разделителями для списка опций. <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&searchString=`@CHUNK regexSearchChunk`</pre>
 </div>
 </div>
@@ -57,10 +57,10 @@ snippet - использование сниппетов для получени�
 </div>
 <div id="collapse1158" class="panel-collapse collapse">
 <div class="panel-body">
-<span class="text-bold">Формат:</span> строка | @FILE | @CHUNK<br>
-<span class="text-bold">Значение по умолчанию:</span> '{"outer":",","inner":"="}'<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Формат:</span> рядок | @FILE | @CHUNK<br>
+<span class="text-bold">Значення за замовчуванням:</span> '{"outer":",","inner":"="}'<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&searchOptionsSeparators=``</pre>
 </div>
 </div>

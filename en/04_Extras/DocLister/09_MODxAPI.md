@@ -9,11 +9,11 @@ MODxAPI это попытка реализовать паттерн [Data mapper
 *modChunk* - Чанки (данные из таблиц site_htmlsnippets)
 *modModule* - Модули (данные из таблиц site_modules)
 *modPlugin* - Плагины (данные из таблиц site_plugins
-*modSnippet* - Сниппеты (данные из таблиц site_snippets)
+*modSnippet* - сніпеты (данные из таблиц site_snippets)
 *modTV* - ТВ параметры (данные из таблиц site_tmplvars)
 *modTemplate* - Шаблоны (данные из таблиц site_templates)
 
-При желании можно быстро создать свою модель для любой таблицы. Для этого существует заготовка класса autoTable. В самом примитивном случае достаточно указать лишь название вашей таблицы. Взгляните на пример создания модели для таблицы с именем tests:
+При желании можно быстро создать свою модель для любой таблицы. Для этого существует заготовка класса autoTable. В самом примитивном случае достаточно указать лишь Назва вашей таблицы. Взгляните на Приклад создания модели для таблицы с именем tests:
 ```
 <?php
 include_once(MODX_BASE_PATH. "assets/lib/MODxAPI/autoTable.abstract.php");
@@ -23,8 +23,8 @@ class modTests extends autoTable
 }
 ```
 
-### Примеры использования
-Методы create, edit, delete, save актуальны для всех моделей. Но в качестве примера будем рассматривать модель modResource.
+### Приклады использования
+Методы create, edit, delete, save актуальны для всех моделей. Но в качестве Приклада будем рассматривать модель modResource.
 
 ```
 include_once(MODX_BASE_PATH."assets/lib/MODxAPI/modResource.php");
@@ -135,12 +135,12 @@ if($modx->isFrontend() && $modx->getLoginUserID('web')){
 ```
 
 *modResource*
-Следующий сниппет позволяет последовательно получать значения полей одного и того же документа не выполняя при этом повторый SQL запрос.
+Следующий сніпет позволяет последовательно получать значения полей одного и того же документа не выполняя при этом повторый SQL запрос.
 ```
 /**
 * <h5>[[DocInfo? &id=`6` &field=`pagetitle`]]</h5>
 * <img src="[[DocInfo? &id=`6` &field=`image`]]" />
-* С данным сниппетом будет выполнен всего 1 SQL запрос
+* С данным сніпетом будет выполнен всего 1 SQL запрос
 */
 if(empty($modx->doc)){
 	include_once(MODX_BASE_PATH."assets/lib/MODxAPI/modResource.php");

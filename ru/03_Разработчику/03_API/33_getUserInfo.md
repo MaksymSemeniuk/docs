@@ -6,7 +6,7 @@ mixed getUserInfo (int $uid);
 
 ***
 
-####Пример
+####Приклад
 
 	$txt = $modx->getUserInfo(1); 
 	print_r($txt); 

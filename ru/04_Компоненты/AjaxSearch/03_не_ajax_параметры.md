@@ -1,7 +1,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>AjaxSearch: Не Ajax параметры </h3> 
-Не Ajax параметры сниппета AjaxSearch.	
+Не Ajax параметры сніпета AjaxSearch.	
 <br>
 <div class="panel-group accordion">
 <div class="panel panel-default">
@@ -11,9 +11,9 @@
 <div id="collapse115" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> ID документа<br>
-<span class="text-bold">Значение по умолчанию:</span> нет<br>
-<span class="text-bold">Примечание:</span> В версии 1.8.4: &AS_landing<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> нет<br>
+<span class="text-bold">Примітка:</span> В версии 1.8.4: &AS_landing<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&landingPage=`12`</pre>
 </div>
 </div>
@@ -25,9 +25,9 @@
 <div id="collapse116" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> число=>0<br>
-<span class="text-bold">Значение по умолчанию:</span> 0<br>
-<span class="text-bold">Примечание:</span> 0 - неограниченное количество результатов<br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 0<br>
+<span class="text-bold">Примітка:</span> 0 - неограниченное количество результатов<br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&grabMax=`20`</pre>
 </div>
 </div>
@@ -39,9 +39,9 @@
 <div id="collapse117" class="panel-collapse collapse">
 <div class="panel-body">
 <span class="text-bold">Формат:</span> 0 | 1<br>
-<span class="text-bold">Значение по умолчанию:</span> 0<br>
-<span class="text-bold">Примечание:</span> <br>
-<p><span class="text-bold">Пример:</span></p>
+<span class="text-bold">Значення за замовчуванням:</span> 0<br>
+<span class="text-bold">Примітка:</span> <br>
+<p><span class="text-bold">Приклад:</span></p>
 <pre class="brush: html;">&showPagingAlways=`1`</pre>
 </div>
 </div>

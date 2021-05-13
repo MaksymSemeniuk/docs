@@ -27,7 +27,7 @@ array getPageInfo (int $id[, int $published[, string $fields]]);
 
 ***
 
-####Пример
+####Приклад
 
 	/**Структура документов:
 	-Статьи (1)

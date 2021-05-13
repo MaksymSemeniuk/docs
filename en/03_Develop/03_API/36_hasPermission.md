@@ -2,7 +2,7 @@
 
 bool hasPermission(string $pm);
 
-**$pm** - название проверяемого права. Может принимать следующие значения:
+**$pm** - Назва проверяемого права. Может принимать следующие значения:
 
 - view_document
 - new_document
@@ -71,7 +71,7 @@ bool hasPermission(string $pm);
 
 ***
 
-####Пример
+####Приклад
 
 	$modx->hasPermission('delete_document');
 	//вернет true, если есть право на удаление документа, или false, если права нет.

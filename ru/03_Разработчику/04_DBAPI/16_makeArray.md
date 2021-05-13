@@ -10,7 +10,7 @@ mixed makeArray($rs, $index = false)
 
 ***
 
-#### Пример
+#### Приклад
 
 function show_members(){
 	$modx = evolutionCMS();

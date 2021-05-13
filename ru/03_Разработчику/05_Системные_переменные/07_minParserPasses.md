@@ -4,6 +4,6 @@ int minParserPasses
 
 Содержит минимальное число проходов парсером.
 
-####Пример
+####Приклад
 
     <?php  echo $modx->minParserPasses;  ?>

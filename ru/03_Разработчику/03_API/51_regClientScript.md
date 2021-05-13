@@ -11,7 +11,7 @@ string regClientScript(string $src[, bool $plaintext]);
 
 По умолчанию: **false**
 
-#### Пример 1: $plaintext = true
+#### Приклад 1: $plaintext = true
 ```
 $src = "<script type='text/javascript'> runSlideShow('slides'); </script>"; 
 $modx->regClientScript($src, true);
@@ -24,7 +24,7 @@ $modx->regClientScript($src, true);
 </body>
 ```
 
-#### Пример 2: $plaintext = false
+#### Приклад 2: $plaintext = false
 ```
 $src = "/assets/js/file.js"; 
 $modx->regClientScript($src);

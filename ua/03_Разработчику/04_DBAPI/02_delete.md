@@ -8,7 +8,7 @@ bool delete(string $from [, string $where [, string $fields]])
 
 ***
 
-####Пример
+####Приклад
 
 	//Удаление пользователя из базы по идентификатору  
 	global $modx, $table_prefix;  

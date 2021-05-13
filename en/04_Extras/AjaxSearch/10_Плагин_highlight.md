@@ -1,7 +1,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h3>AjaxSearch: Плагины Highlight </h3> 
-Плагины Highlight для выделения слов в результатах поиска при использования сниппета AjaxSearch.	
+Плагины Highlight для выделения слов в результатах поиска при использования сніпета AjaxSearch.	
 <br>
 <p>Плагины предназначены для выделения в результатах поиска слов из поискового запроса.</p>
 <h3 class="sub-header text-bold">Плагин searchHighlight</h3>

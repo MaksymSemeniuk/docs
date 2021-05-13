@@ -6,7 +6,7 @@ string addEventListener(string $evtName, string $pluginName);
 ```
 **$evtName** - наименование события
 
-**$pluginName** - название плагина
+**$pluginName** - Назва плагина
 
 
 ### Исходный код функции ###

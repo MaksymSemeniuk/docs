@@ -2,7 +2,7 @@
 
 mixed getColumn (string $name, $dsq)
 
-**$name** - название колонки
+**$name** - Назва колонки
 
 **$dsq** - результат выполнения запроса или SQL-запрос
 
@@ -10,7 +10,7 @@ mixed getColumn (string $name, $dsq)
 
 ***
 
-####Пример
+####Приклад
 
 	function myColumn() {  
 		global $modx;  

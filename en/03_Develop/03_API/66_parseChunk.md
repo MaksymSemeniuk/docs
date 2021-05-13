@@ -6,7 +6,7 @@
 
 string parseChunk(string $chunkName, array $chunkArr[, string $prefix[, string $suffix]]);
 
-**$chunkName** - название чанка (чувствительно к регистру!)
+**$chunkName** - Назва чанка (чувствительно к регистру!)
 
 **$chunkArr** - массив со значениями плейсхолдеров
 
@@ -27,7 +27,7 @@ string parseChunk(string $chunkName, array $chunkArr[, string $prefix[, string $
 
 ***
 
-####Пример:
+####Приклад:
 
 	$txt = $modx->parseChunk('ditto_blog', array( 'name' => 'Spros66.ru', 'type' => 'site', 'url' => 'http://spros66.ru' ), '[+', '+]' );
 	//вернет содержимое чанка ditto_blog, в котором будут заменены плейсхолдеры [+name+], [+type+] и [+url+] на значения.

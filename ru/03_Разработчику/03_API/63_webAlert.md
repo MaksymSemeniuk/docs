@@ -10,7 +10,7 @@ void webAlert(string $msg[, $url]);
 
 ***
 
-####Пример
+####Приклад
 
 	$modx->webAlert('Hello!');
 	выведет alert с сообщением «Hello!»

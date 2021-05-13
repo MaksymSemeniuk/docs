@@ -6,7 +6,7 @@ mixed getLoginUserType();
 
 ***
 
-####Пример
+####Приклад
 
 	echo 'Тип пользователя: ' . $modx->getLoginUserType(); 
 	

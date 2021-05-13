@@ -4,7 +4,7 @@ string getIdFromAlias(string $alias);
 ```
 **$alias** - псевдоним документа
 
-### Пример
+### Приклад
 ```
 	$id = $modx->getIdFromAlias('folder/folder/doc.html')
 	//id документа doc.html

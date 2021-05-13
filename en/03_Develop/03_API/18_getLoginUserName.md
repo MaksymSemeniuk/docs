@@ -6,7 +6,7 @@ mixed getLoginUserName();
 
 ***
 
-####Пример
+####Приклад
 
 	echo 'Логин пользователя: ' . $modx->getLoginUserName(); 
 	

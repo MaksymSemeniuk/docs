@@ -4,7 +4,7 @@ void disconnect()
 
 ***
 
-####Пример
+####Приклад
 
 	//Создание соединения  
 	$modx->db->connect('123.45.6.7', 'mydb', 'user', 'password', true);  

@@ -2,7 +2,7 @@
 
 mixed insert($fields, $intotable [, $fromfields [, $fromtable [, $where [, $limit ]]]])
 
-**$fields** - ассоциативный массив добавляемых значений, с названием поля в виде ключа
+**$fields** - ассоциативный массив добавляемых значений, с Назвам поля в виде ключа
 
 **$intotable**- таблица для добавления
 
@@ -14,7 +14,7 @@ mixed insert($fields, $intotable [, $fromfields [, $fromtable [, $where [, $limi
 
 **$limit** - ограничение количества записей для импорт
 
-Метод INSERT позволяет добавлять новые записи в базу данных. Значения передаются в виде ассоциативного массива $fields, формат которого field => value. Ключ "field" указывает на название колонки, а "value" - добавляемое значение.
+Метод INSERT позволяет добавлять новые записи в базу данных. Значения передаются в виде ассоциативного массива $fields, формат которого field => value. Ключ "field" указывает на Назва колонки, а "value" - добавляемое значение.
 
 Параметры $fromfields, $fromtable, $where и $limit используются для копирования данных из одной таблицы в другую.
 
@@ -22,7 +22,7 @@ mixed insert($fields, $intotable [, $fromfields [, $fromtable [, $where [, $limi
 
 ***
 
-####Пример
+####Приклад
 
 	function insert_my_rows( $data = array() ) {  
 		global $modx;  

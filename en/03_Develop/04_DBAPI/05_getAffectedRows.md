@@ -12,7 +12,7 @@ integer getAffectedRows ([$conn])
 
 ***
 
-####Пример
+####Приклад
 
 	function deleteid($id) {  
 		$modx->db->query("DELETE FROM my_table WHERE userid=".$id);  

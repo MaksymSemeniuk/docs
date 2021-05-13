@@ -4,11 +4,11 @@
 
 string getChunk(string $chunkName);
 
-**$chunkName** - название чанка (чувствительно к регистру!)
+**$chunkName** - Назва чанка (чувствительно к регистру!)
 
 ***
 
-####Пример:
+####Приклад:
 
 ````php
 $txt = $modx->getChunk('ditto_blog'); //вернет содержимое чанка ditto_blog.

@@ -20,7 +20,7 @@ void sendAlert(string $type, mixed $to, mixed $from, string $subject, string $ms
 
 ***
 
-####Пример
+####Приклад
 
 	$modx->sendAlert('alert','admin','admin','Заголово','Шеф все готово, я опубликовал тот документ. ;-)',1); 
 	

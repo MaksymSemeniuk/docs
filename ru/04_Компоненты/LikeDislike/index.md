@@ -5,12 +5,12 @@ LikeDislike - возможность ставить оценки на Evolution 
 <p>Скачивать здесь: <i class="fa fa-github fa-lg text-primary"></i> <a href="https://github.com/Pathologic/LikeDislike" rel="nofollow" target="_blank">Pathologic</a></p>
 <p>В коробке:</p>
 <ul>
-	<li>сниппет LikeDislike, который и дает возможность ставить оценки;</li>
-	<li>сниппет ldController для запуска DocLister с расширенным контроллером site_content;</li>
+	<li>сніпет LikeDislike, который и дает возможность ставить оценки;</li>
+	<li>сніпет ldController для запуска DocLister с расширенным контроллером site_content;</li>
 	<li>модуль LikeDislike, чтобы видеть оценки в админке.</li>
 </ul>
 <p>Защита от накруток <s>никакая</s> простая – куки, ip, также можно разрешить оценивать только зарегистрированным пользователям.</p>
-<h3 class="sub-header">Установка</h3>
+<h3 class="sub-header">Встановлення</h3>
 <p>После установки нужно запустить модуль, чтобы создались таблицы.</p>
 <p>На странице документа нужно подключить скрипт jGrowl:</p>
 <pre class="brush: html;">
@@ -24,7 +24,7 @@ LikeDislike - возможность ставить оценки на Evolution 
 &lt;link rel="stylesheet" href="assets/snippets/LikeDislike/likedislike.css"&gt;
 </pre>
 
-<p>Вызов сниппета выглядит так:</p>
+<p>Вызов сніпета выглядит так:</p>
 <pre class="brush: html;">
 [!LikeDislike? 
 &amp;enabledTpl=`@CODE:
@@ -47,9 +47,9 @@ LikeDislike - возможность ставить оценки на Evolution 
 `
 !]
 </pre>
-<p>Скрипт likedislike.js написан под верстку в этом примере.</p>
-<p>Кроме вывода шаблонов сниппет задает плейсхолдеры [+modResource.like.{id}+] и [+modResource.dislike.{id}+].</p>
-<h3 class="sub-header">Параметры сниппета LikeDislike</h3>
+<p>Скрипт likedislike.js написан под верстку в этом Прикладе.</p>
+<p>Кроме вывода шаблонов сніпет задает плейсхолдеры [+modResource.like.{id}+] и [+modResource.dislike.{id}+].</p>
+<h3 class="sub-header">Параметры сніпета LikeDislike</h3>
 <ul>
 	<li><span class="text-bold">rid</span> – id оцениваемого ресурса, если параметр не задан, то по возможности используется id текущего ресурса;</li>
 	<li><span class="text-bold">classKey</span> – параметр позволяющий разделять оцениваемые сущности. Сделано на будущее, вдруг понадобится ставить оценки пользователям или еще чему-нибудь. По умолчанию</span> – modResource.</li>
@@ -58,9 +58,9 @@ LikeDislike - возможность ставить оценки на Evolution 
 	<li><span class="text-bold">disabledTpl</span> – шаблон, если запрещено оценивать;</li>
 	<li><span class="text-bold">onlyUsers</span> – разрешено оценивать только зарегистрированным пользователям;</li>
 </ul>
-<p>Если не задавать шаблоны, то сниппет вернет массив с ключами like и dislike.</p>
+<p>Если не задавать шаблоны, то сніпет вернет массив с ключами like и dislike.</p>
 
-<h3 class="sub-header">Параметры сниппета ldController</h3>
+<h3 class="sub-header">Параметры сніпета ldController</h3>
 <ul>
 	<li><span class="text-bold">allowLD</span> – разрешить оценивать в списке (по умолчанию – 0);</li>
 	<li><span class="text-bold">enabledTpl</span> – шаблон, если разрешено оценивать;</li>

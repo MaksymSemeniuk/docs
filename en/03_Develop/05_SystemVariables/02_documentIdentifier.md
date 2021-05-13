@@ -4,6 +4,6 @@ int documentIdentifier
 
 Содержит ID документа на котором был вызван код.
 
-####Пример
+####Приклад
 
     <?php  echo "ID ресурса: " . $modx->documentIdentifier;  ?>

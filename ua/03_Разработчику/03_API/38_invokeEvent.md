@@ -7,6 +7,6 @@ array invokeEvent(string $evtName, array $extParams);
 
 ***
 
-####Пример
+####Приклад
 
 	$modx->invokeEvent("OnWebChangePassword", array( "userid" => $id, "username" => $username, "userpassword" => $newpwd ));

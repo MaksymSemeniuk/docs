@@ -8,7 +8,7 @@ mixed makeArray( $rs )
 
 ***
 
-####Пример
+####Приклад
 
 	function show_members() {  
 		global $modx;  

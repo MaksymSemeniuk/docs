@@ -8,7 +8,7 @@ array getColumnNames($dsq)
 
 ***
 
-####Пример
+####Приклад
 
 	$result = $modx->db->select( 'id, name, age', 'people_table' );  
 	
